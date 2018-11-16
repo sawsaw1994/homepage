@@ -1,12 +1,13 @@
-<?php 
+<?php
 function hotel_melbourne_page_menu_args( $args ) {
 	if ( ! isset( $args['show_home'] ) )
-		$args['show_home'] = true;
+		// $args['show_home'] = true;
+			$args['show_home'] = "ホーム";
 	return $args;
 }
 add_filter( 'wp_page_menu_args', 'hotel_melbourne_page_menu_args' );
 
- 
+
 function hotel_melbourne_fallback_page_menu( $args = array() ) {
 
 	$defaults = array('sort_column' => 'menu_order, post_title', 'menu_class' => 'menu', 'echo' => true, 'link_before' => '', 'link_after' => '');
