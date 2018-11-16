@@ -1,9 +1,9 @@
 /***
 Theme Name: Abacus Hotel
-Theme URI: 
-Description: Child Theme of hotel-melbourne. This is a Full Width Layout of the Parent Theme hotel-melbourne.Hotel-Melbourne is a responsive and fully customizable template for Luxury Hotel and resorts theme.The Theme has You can use it for your resorts, hotel or any type of site.Custom menus to choose the menu in Primary Location that is in Header area of the site. which is ideal for creating a hotel / resorts website.Hotel-Melbourne is Retina ready. We focused on usability across various devices, starting with smartphones. Hotel-Melbourne is a Cross-Browser Compatible theme that works on All leading web browsers.In header area and footer of the theme offers Social Media Links to add your Social Links here. we have provide header image setting on front page or index page in our theme you can change this image from theme customizer settings. translation ready and many more. We have provide dynamically hotel room booking facility in our pro theme, no needs to add any types of booking room plugin in your site client easily setup/customize room booking schedule for customers using our giving functionality. we have include user dashboard who is the booking room so user can see his booking on user dashboard after login. Everything of booking detail and user detail show in admin dashboard so admin can manage everything booking and user process. We have include all types of post formate in our theme like Audio post format, Video post format, Image gallery post format, Standard post format, Simple post format etc, you can create your own this types of multiple post format in your site. We have provide a awesome Home page template with multiple beautiful sections inside the Home page template like Awesome slider, Home portfolio/Room section, Home blog section etc. You make this template your front-page easily, creating your front page then please follow this instruction 1. Go on your creating page section --> create a new page --> go the down of publish button and see there Template drop down --> select Home Template from there and publish your page. 2. Go on Settings menu open it --> see inside the settings menu Reading menu tab and click on that --> see inside the reading page Front page displays and select A static page (select below) option and choose your Home template from drop-down menu. you can check our pro theme demo here:- http://asiathemes.asia/?item=hotel , our theme detail page:- https://asiathemes.com/hotel-details/ 
+Theme URI:
+Description: Child Theme of hotel-melbourne. This is a Full Width Layout of the Parent Theme hotel-melbourne.Hotel-Melbourne is a responsive and fully customizable template for Luxury Hotel and resorts theme.The Theme has You can use it for your resorts, hotel or any type of site.Custom menus to choose the menu in Primary Location that is in Header area of the site. which is ideal for creating a hotel / resorts website.Hotel-Melbourne is Retina ready. We focused on usability across various devices, starting with smartphones. Hotel-Melbourne is a Cross-Browser Compatible theme that works on All leading web browsers.In header area and footer of the theme offers Social Media Links to add your Social Links here. we have provide header image setting on front page or index page in our theme you can change this image from theme customizer settings. translation ready and many more. We have provide dynamically hotel room booking facility in our pro theme, no needs to add any types of booking room plugin in your site client easily setup/customize room booking schedule for customers using our giving functionality. we have include user dashboard who is the booking room so user can see his booking on user dashboard after login. Everything of booking detail and user detail show in admin dashboard so admin can manage everything booking and user process. We have include all types of post formate in our theme like Audio post format, Video post format, Image gallery post format, Standard post format, Simple post format etc, you can create your own this types of multiple post format in your site. We have provide a awesome Home page template with multiple beautiful sections inside the Home page template like Awesome slider, Home portfolio/Room section, Home blog section etc. You make this template your front-page easily, creating your front page then please follow this instruction 1. Go on your creating page section --> create a new page --> go the down of publish button and see there Template drop down --> select Home Template from there and publish your page. 2. Go on Settings menu open it --> see inside the settings menu Reading menu tab and click on that --> see inside the reading page Front page displays and select A static page (select below) option and choose your Home template from drop-down menu. you can check our pro theme demo here:- http://asiathemes.asia/?item=hotel , our theme detail page:- https://asiathemes.com/hotel-details/
 Author: asiathemes
-Author URI: 
+Author URI:
 Template: hotel-melbourne
 Version: 1.5
 Tags: black, white,green, custom-menu, right-sidebar,featured-image-header, sticky-post, theme-options, threaded-comments, featured-images, flexible-header, responsive-layout
@@ -45,7 +45,7 @@ p{color:#a3a3a3;}
     background-color:#F80 !important;
     border-color: #ffffff !important;
 }
-.navbar-toggle .icon-bar { background: #fff;}	
+.navbar-toggle .icon-bar { background: #fff;}
 .navbar-toggle:hover,
 .navbar-toggle:focus {background-color: #F80;}
 .navbar {
@@ -79,7 +79,7 @@ p{color:#a3a3a3;}
 .dropdown-menu > li > a {
     color: #666666;
 	background-color: #F80;
-	border-bottom: 1px solid #eeeeee; transition: all 0.3s ease-in-out 0s; 
+	border-bottom: 1px solid #eeeeee; transition: all 0.3s ease-in-out 0s;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
@@ -112,7 +112,7 @@ p{color:#a3a3a3;}
 .table-condensed thead{color: #FFF; background:#F80;}
 .table-condensed tbody{color: #FFF;background:#10253C;}
 td.active{border:1px dotted #ccc; background-color:#F80;}
-/*--------Home Slider Section---------------------*/ 
+/*--------Home Slider Section---------------------*/
 .slide-caption h1 {background: rgba(0,0,0,0.8);color: #F4F4F5;}
 .slide-caption p {background:rgba(255,255,255,0.8);color: #333333;}
 /*-----------Service Section--------------*/
@@ -124,7 +124,7 @@ td.active{border:1px dotted #ccc; background-color:#F80;}
 .boxes_content p{color:#929292;}
 /*------------------Footer-----------------------------------------------------------------*/
 
-.footer .overlay {background: rgba(9, 13, 17,0.9) none repeat scroll 0 0;}
+.footer .overlay {background: rgba(9, 13, 17,0.5) none repeat scroll 0 0;}
 footer .links-social h3.title { color: #fff;}
 footer .links-social .link-groups .links ul li a {color: #fff;}
 footer .links-social .link-groups .links p {color: #CECECE;}
@@ -528,7 +528,7 @@ ul.post-content li {border-bottom: 1px dotted #d6d2d2; }
 ul.member-tabs li a {color:#fff !important;}
 
 /*----------booking form on modal------------------------------*/
-.modal-header{   
+.modal-header{
     background: #ff961f;
     color: #fff;
 }
@@ -573,7 +573,7 @@ ul.member-tabs li a {color:#fff !important;}
   color:#fff;
   border:2px solid #ff961f;
   background-color:#ff961f;
-} 
+}
 .room-detail_book .nav li a {
     border-bottom: 1px solid #D8D8D8;
     color: #000;
@@ -639,4 +639,11 @@ select#cat {
 select#archives-dropdown--1 {
     padding: 7px 20px;
     border-radius: 5px;
+}
+
+.flex-active-slide img {
+  background: fixed;
+}
+.services-section {
+  background: rgba(0,0,0,0.8);
 }
