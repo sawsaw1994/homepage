@@ -645,5 +645,12 @@ select#archives-dropdown--1 {
   background: fixed;
 }
 .services-section {
-  background: rgba(0,0,0,0.8);
+  background: rgb(0,0,0,0.2);
+}
+.service-box img {
+  height: 285px;
+  object-fit: none;
+}
+.home-gallery-inner table tr td {
+  color: #000;
 }
