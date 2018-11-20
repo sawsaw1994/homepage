@@ -38,16 +38,25 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 					<div class="section-title">
 						<h1>Question and Answer</h1>
 					</div>
-					<ul>
+					<div class="room-col">
+						<div class="overly">
+							<span>
+								<a class="photobox_a gallery-icons" href="<?php echo esc_url($portfolio_options['upload_image_one']); ?>"><i class="fa fa-plus-circle"></i><img src="<?php echo esc_url($portfolio_options['upload_image_one']); ?>" style="display:none !important;"></a>
+								<a href="<?php echo esc_url($portfolio_options['portfolio_image_qa_link']); ?>" <?php if( $portfolio_options['portfolio_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-link"></i></a>
+							</span>
+						</div>
+						<img src="<?php echo esc_url($portfolio_options['upload_image_questionandanswer']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+					</div>
+					<!-- <ul>
 						<li>How can I login?</li>
 						<li>How can I contact?</li>
 						<li>How can I play?</li>
-					</ul>
-					<div class="home-gallery-inner">
+					</ul> -->
+					<!-- <div class="home-gallery-inner"> -->
 						<!-- <h3><?php echo $portfolio_options['portfolio_image_one_title']; ?></h3>
 						 <p><?php echo $portfolio_options['portfolio_price_one']; ?><span><?php echo $portfolio_options['portfolio_time_section_one']; ?></span></p> -->
-						 <a class="main-btn" href="<?php echo esc_url($portfolio_options['portfolio_qa_one_link']); ?>"<?php if( $portfolio_options['portfolio_new_tab'] ==1 ) { echo "target='_blank'"; } ?>>Read More</a>
-					</div>
+						 <!-- <a class="main-btn" href="<?php echo esc_url($portfolio_options['portfolio_qa_one_link']); ?>"<?php if( $portfolio_options['portfolio_new_tab'] ==1 ) { echo "target='_blank'"; } ?>>Read More</a> -->
+					<!-- </div> -->
 				</div>
 			</div>
 		</div>

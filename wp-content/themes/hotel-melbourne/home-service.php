@@ -3,6 +3,64 @@
 $melbourne_options=hotel_melbourne_theme_default_data();
 $home_service_setting = wp_parse_args(  get_option( 'melbourne_option', array() ), $melbourne_options );
 if($home_service_setting['service_section_enabled'] == 1 ) { ?>
+  <section class="services-section show-circle-lists" data-aos="fade-up"  data-aos-duration="500" style="margin-bottom:800px;">
+    <div class="container">
+      <div class="row" style="margin-left: 150px;">
+         <div class="circles-parent">
+           <div class="">
+             <div class="circle one" style="background: url(<?php echo esc_url($home_service_setting['service_one_image']);  ?>) no-repeat;background-size: 100% 100%;">
+               <div class="circle-overlay">
+                 <img src="<?php echo esc_url($home_service_setting['service_one_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+                 <div class="service-icon show-title">
+                   <span>精子提供プログラム</span>
+                 </div>
+                 <div class="room-col">
+                   <div class="overly">
+                     <span>
+                       <a href="<?php echo esc_url($home_service_setting['service_one_link']); ?>" <?php if( $portfolio_options['service_one_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-arrow-right"></i></a>
+                     </span>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+            <div class="circle two" style="background: url(<?php echo esc_url($home_service_setting['service_two_image']);  ?>) no-repeat;background-size: 100% 100%;">
+              <div class="circle-overlay">
+                <img src="<?php echo esc_url($home_service_setting['service_two_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+                <div class="service-icon show-title">
+                  <span>代理母プログラム</span>
+                </div>
+                <div class="room-col">
+                  <div class="overly">
+                    <span>
+                      <a href="<?php echo esc_url($home_service_setting['service_two_link']); ?>" <?php if( $portfolio_options['service_one_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-arrow-right"></i></a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="circle three" style="background: url(<?php echo esc_url($home_service_setting['service_three_image']);  ?>) no-repeat;background-size: 100% 100%;">
+              <div class="circle-overlay">
+                <img src="<?php echo esc_url($home_service_setting['service_three_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+                <div class="service-icon show-title">
+                  <span>卵子提供プログラム</span>
+                </div>
+                <div class="room-col">
+                  <div class="overly">
+                    <span>
+                      <a href="<?php echo esc_url($home_service_setting['service_two_link']); ?>" <?php if( $portfolio_options['service_one_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-arrow-right"></i></a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+    </div>
+  </section>
+
+<div class="clearfix"></div>
 <section class="services-section" data-aos="fade-up"  data-aos-duration="500">
  <div class="container">
   <!-- <div class="row">

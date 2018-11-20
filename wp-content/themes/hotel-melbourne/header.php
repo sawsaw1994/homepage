@@ -2,8 +2,8 @@
 <html <?php language_attributes(); ?> >
     <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<?php 
-	$melbourne_options=hotel_melbourne_theme_default_data(); 
+	<?php
+	$melbourne_options=hotel_melbourne_theme_default_data();
 	$header_setting = wp_parse_args(  get_option( 'melbourne_option', array() ), $melbourne_options ); ?>
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>" charset="<?php bloginfo('charset'); ?>" />
 	<?php wp_head(); ?>
@@ -21,7 +21,7 @@
 		<div class="row">
 		   <div class="col-md-6">
 			 <div class="info-top">
-			<?php if($header_setting['header_text_enabled'] == 0 ) { 
+			<?php if($header_setting['header_text_enabled'] == 0 ) {
 			if($header_setting['header_info_phone']!='') { ?>
 				<span><i class="fa fa-phone"></i><?php echo esc_attr($header_setting['header_info_phone']); ?></span>
 				<?php } if($header_setting['header_info_mail']!='') { ?>
@@ -42,7 +42,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				
+
 				<?php hotel_melbourne_the_custom_logo(); ?>
 				<?php $description = get_bloginfo( 'description', 'display' );
 					if ( $description || is_customize_preview() ) : ?>
@@ -51,14 +51,14 @@
 					<?php endif; ?>
 			</div>
 			<div class="navbar-collapse collapse">
-							<?php	wp_nav_menu( array(  
+							<?php	wp_nav_menu( array(
 									'theme_location' => 'primary',
 									'container'  => 'collapse navbar-collapse',
 									'menu_class' => 'nav navbar-nav navbar-right',
 									'fallback_cb' => 'hotel_melbourne_fallback_page_menu',
 									'walker' => new hotel_melbourne_nav_walker()
 									)
-								);	?> 
+								);	?>
 			</div>
 		</div>
 	</div>

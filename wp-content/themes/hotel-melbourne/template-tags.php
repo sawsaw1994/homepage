@@ -7,13 +7,13 @@ function hotel_melbourne_archive_title( $before = '
 					<h1>', $after = '</h1>' ) {
 	if( is_archive() )
 	{
-	
+
 	if ( is_category() ) {
 		$title = sprintf( __( 'Category Archives: %s', 'hotel-melbourne' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 	} elseif ( is_tag() ) {
-		$title = sprintf( __( 'Tag Archives: %s', 'hotel-melbourne' ), '<span>' . single_tag_title( '', false ) . '</span>' ); 
+		$title = sprintf( __( 'Tag Archives: %s', 'hotel-melbourne' ), '<span>' . single_tag_title( '', false ) . '</span>' );
 	} elseif ( is_author() ) {
-		$title = sprintf( __( 'Author Archives: %s', 'hotel-melbourne' ), '<a href="' . esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a>' ); 
+		$title = sprintf( __( 'Author Archives: %s', 'hotel-melbourne' ), '<a href="' . esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a>' );
 	} elseif ( is_year() ) {
 		$title = sprintf( __( 'Yearly Archives: %s', 'hotel-melbourne' ), get_the_date( _x( 'Y', 'yearly archives date format', 'hotel-melbourne' ) ) );
 	} elseif ( is_month() ) {
@@ -34,7 +34,7 @@ function hotel_melbourne_archive_title( $before = '
 	else
 	{
 		echo '<h1 class="pagetitle white wow bounceInLeft animated" data-wow-delay="0.4s">'.get_the_title().'</h1>';
-	}	
+	}
 	/**
 	 * Filter the archive title.
 	 *
@@ -57,16 +57,16 @@ function hotel_melbourne_wp_footer () { ?>
 <div class="overlay links-social">
 <div class="container container-class">
 <div class="links-social-inner">
-<div class="row">						
+<div class="row">
 	<div class="link-groups" data-aos="fade-up"  data-aos-duration="2000">
 		<?php
-			$melbourne_options=hotel_melbourne_theme_default_data(); 
+			$melbourne_options=hotel_melbourne_theme_default_data();
 			$footer_setting = wp_parse_args(  get_option( 'melbourne_option', array() ), $melbourne_options );
-			
+
 		if ( is_active_sidebar( 'footer-widget-area' ) )
-			{ 
-				dynamic_sidebar( 'footer-widget-area' ); 
-				} else { 
+			{
+				dynamic_sidebar( 'footer-widget-area' );
+				} else {
 				$args = array(
 				'before_widget' => '<div class="col-sm-3">
 			<div class="links">',
@@ -90,12 +90,12 @@ function hotel_melbourne_wp_footer () { ?>
 }
 </style>
 <!--Copyright---->
- <div class="copyright"> 
+ <div class="copyright">
     <div class="widget-content">
 		<div class="newsletter">
 			<ul class="social list-unstyled bordered big" data-aos="fade-up"  data-aos-duration="1500">
 			<?php
-				
+
 				if($footer_setting['header_social_media_enabled']== 0 ) {
 					if($footer_setting['social_media_facebook_link'] != '') { ?>
 				<li><a href="<?php echo esc_url($footer_setting['social_media_facebook_link']); ?>"<?php if( $footer_setting['facebook_media_enabled'] ==1 ) { echo "target='_blank'"; } ?> class="facebook animations-on bounceIn" data-delay="100"><i class="fa fa-facebook"></i></a></li>
@@ -109,14 +109,14 @@ function hotel_melbourne_wp_footer () { ?>
 			</ul>
 		</div>
 	</div>
-	<p><?php if($footer_setting['footer_customization_text'] !='') { echo esc_attr($footer_setting['footer_customization_text']); } 
-			if($footer_setting['footer_customization_develop'] !='') { echo "-" .esc_attr($footer_setting['footer_customization_develop']); } ?> 
+	<p><?php if($footer_setting['footer_customization_text'] !='') { echo esc_attr($footer_setting['footer_customization_text']); }
+			if($footer_setting['footer_customization_develop'] !='') { echo "-" .esc_attr($footer_setting['footer_customization_develop']); } ?>
 			<a target="_blank" class="footLink" rel="nofollow" href="<?php if($footer_setting['develop_by_link'] !='') { echo esc_url($footer_setting['develop_by_link']); } ?>"><?php if($footer_setting['develop_by_name'] !='') { echo esc_attr($footer_setting['develop_by_name']); } ?></a></p>
-	
- </div>	
-<!--Scroll To Top--> 
+
+ </div>
+<!--Scroll To Top-->
     <a href="#" class="hc_scrollup"><i class="fa fa-chevron-up"></i></a>
-<!--/Scroll To Top--> 
+<!--/Scroll To Top-->
 </div>
 <!--/Scroll To Top-->
 <?php
@@ -166,9 +166,9 @@ function hotel_melbourne_content_nav( $nav_id ) {
 	</nav><!-- #<?php echo esc_html( $nav_id ); ?> -->
 	<?php
 }
-endif; 
+endif;
 
-/***** Blog-Detail Page Author Detail *****/ 
+/***** Blog-Detail Page Author Detail *****/
 if ( ! function_exists( 'hotel_melbourne_author_detail' ) ) :
 function hotel_melbourne_author_detail() { ?>
 	<article class="blog-author" data-aos="fade-up"  data-aos-duration="1500">
@@ -180,9 +180,9 @@ function hotel_melbourne_author_detail() { ?>
 					<h6><?php the_author_link(); ?></h6>
 						<p><?php echo get_the_author_meta( 'description' );if(!get_the_author_meta('description')) _e('No description.Please update your profile.','hotel-melbourne'); ?></p>
 				</div>
-		</div>	
+		</div>
 	</article>
-<?php 
+<?php
 } endif;
 
 function hotel_melbourne_get_blog_excerpt(){

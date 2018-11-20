@@ -87,6 +87,11 @@ function hotel_melbourne_theme_default_data()
 	'portfolio_three_new_tab' => 1,
   'portfolio_qa_one_link' => get_site_url().'/qa',
 
+  'upload_image_questionandanswer' => get_template_directory_uri() .'/images/gallery/qa.jpg',
+	'portfolio_image_qa_link' => get_site_url().'/qa',
+	'portfolio_three_new_tab' => 0,
+  'portfolio_qa_one_link' => get_site_url().'/qa',
+
 	//Home Latest Blog Post
 	'home_blog_enabled' => 1,
 	'blog_heading_title' => get_theme_mod('blog_heading_title',__('Latest News','hotel-melbourne')),

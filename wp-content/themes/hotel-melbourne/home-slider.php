@@ -60,12 +60,12 @@ $slideshowSpeed=$slider_setting['slideshowSpeed'];
 		}
 </script>
 <!--Flex Slider-->
-	<div class="flexslider">
+	<div class="flexslider" style="position: absolute;">
         <div class="flex-viewport">
 			<ul class="slides">
 				<li>
 				<?php if($slider_setting['slider_image_one'] !='') { ?>
-				<img src="<?php echo esc_url($slider_setting['slider_image_one']); ?>" class="img-responsive" alt="<?php echo esc_attr($slider_setting['slider_image_title_one']); ?>">
+				<img src="<?php echo esc_url($slider_setting['slider_image_one']); ?>" width="3264" height="2448" sizes="100vw"  class="img-responsive" alt="<?php echo esc_attr($slider_setting['slider_image_title_one']); ?>">
 			<?php } ?>
 
 					  <div class="slide-caption text-center">
@@ -82,7 +82,7 @@ $slideshowSpeed=$slider_setting['slideshowSpeed'];
 
 					<li>
 				<?php if($slider_setting['slider_image_two'] !='') { ?>
-				<img src="<?php echo esc_url($slider_setting['slider_image_two']); ?>" class="img-responsive" alt="<?php echo esc_attr($slider_setting['slider_image_title_two']); ?>">
+				<img src="<?php echo esc_url($slider_setting['slider_image_two']); ?>" width="3264" height="2448" sizes="100vw"  class="img-responsive" alt="<?php echo esc_attr($slider_setting['slider_image_title_two']); ?>">
 			<?php } ?>
 
 					  <div class="slide-caption text-center">
@@ -99,7 +99,7 @@ $slideshowSpeed=$slider_setting['slideshowSpeed'];
 
 				<li>
 				<?php if($slider_setting['slider_image_three'] !='') { ?>
-				<img src="<?php echo esc_url($slider_setting['slider_image_three']); ?>" class="img-responsive" alt="<?php echo esc_attr($slider_setting['slider_image_title_three']); ?>">
+				<img src="<?php echo esc_url($slider_setting['slider_image_three']); ?>" width="3264" height="2448" sizes="100vw" class="img-responsive" alt="<?php echo esc_attr($slider_setting['slider_image_title_three']); ?>">
 			<?php } ?>
 
 					  <div class="slide-caption text-center">
