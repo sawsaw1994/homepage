@@ -16,8 +16,8 @@
 </style>
 <div class="wrapper">
 
- <section class="header-top-section">
-	<div class="container">
+ <section class="header-top-section" style="background: transparent;">
+	<!-- <div class="container">
 		<div class="row">
 		   <div class="col-md-6">
 			 <div class="info-top">
@@ -30,7 +30,10 @@
 			 </div>
 			</div>
 		</div>
-	</div>
+	</div> -->
+</section>
+<section style="top: 0;position: absolute;background: transparent; padding: 30px 20px;">
+  <h1>HelloPage</h1>
 </section>
 
 <div class="navbar navbar-wrapper navbar-static-top" role="navigation">

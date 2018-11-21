@@ -3,7 +3,7 @@
 $melbourne_options=hotel_melbourne_theme_default_data();
 $home_service_setting = wp_parse_args(  get_option( 'melbourne_option', array() ), $melbourne_options );
 if($home_service_setting['service_section_enabled'] == 1 ) { ?>
-  <section class="services-section show-circle-lists" data-aos="fade-up"  data-aos-duration="500" style="margin-bottom:800px;">
+  <!-- <section class="services-section show-circle-lists" data-aos="fade-up"  data-aos-duration="500" style="margin-bottom:800px;">
     <div class="container">
       <div class="row" style="margin-left: 150px;">
          <div class="circles-parent">
@@ -58,11 +58,141 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
          </div>
       </div>
     </div>
+  </section> -->
+  <section class="services-section" style="background: rgb(0,0,0,0.5);" data-aos="fade-up"  data-aos-duration="500">
+     <div class="container" style="padding: 30px;">
+       <div class="row" style="text-align: center;">
+         <div class="circle one" data-aos="zoom-in" data-aos-duration="1000" style="background: url(<?php echo esc_url($home_service_setting['service_one_image']);  ?>) no-repeat;background-size: 100% 100%;">
+           <div class="circle-overlay">
+             <img src="<?php echo esc_url($home_service_setting['service_one_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+             <div class="service-icon show-title">
+               <span>精子提供プログラム</span>
+             </div>
+             <div class="room-col">
+               <div class="overly">
+                 <span>
+                   <a href="<?php echo esc_url($home_service_setting['service_one_link']); ?>" <?php if( $portfolio_options['service_one_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-arrow-right"></i></a>
+                 </span>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="row" style="display: inline-grid;width: 100%;">
+         <div class="circle two"  data-aos="zoom-in" data-aos-duration="1000" style="background: url(<?php echo esc_url($home_service_setting['service_two_image']);  ?>) no-repeat;background-size: 100% 100%;">
+           <div class="circle-overlay">
+             <img src="<?php echo esc_url($home_service_setting['service_two_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+             <div class="service-icon show-title">
+               <span>代理母プログラム</span>
+             </div>
+             <div class="room-col">
+               <div class="overly">
+                 <span>
+                   <a href="<?php echo esc_url($home_service_setting['service_two_link']); ?>" <?php if( $portfolio_options['service_one_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-arrow-right"></i></a>
+                 </span>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="circle three" data-aos="zoom-in" data-aos-duration="1000"  style="background: url(<?php echo esc_url($home_service_setting['service_three_image']);  ?>) no-repeat;background-size: 100% 100%;">
+           <div class="circle-overlay">
+             <img src="<?php echo esc_url($home_service_setting['service_three_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+             <div class="service-icon show-title">
+               <span>卵子提供プログラム</span>
+             </div>
+             <div class="room-col">
+               <div class="overly">
+                 <span>
+                   <a href="<?php echo esc_url($home_service_setting['service_two_link']); ?>" <?php if( $portfolio_options['service_one_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-arrow-right"></i></a>
+                 </span>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
   </section>
-
 <div class="clearfix"></div>
-<section class="services-section" data-aos="fade-up"  data-aos-duration="500">
+<section class="services-section" style="background: rgb(0,0,0,0.5);" data-aos="fade-up"  data-aos-duration="500">
  <div class="container">
+   <div class="row">
+     <div class="col-md-6 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="1000">
+       <div class="home-gallery">
+         <div class="section-title">
+           <h1>代金版</h1>
+         </div>
+         <div class="room-col">
+           <div class="overly">
+             <span>
+               <!-- <a class="photobox_a gallery-icons" href="<?php echo esc_url($portfolio_options['upload_image_one']); ?>"><i class="fa fa-plus-circle"></i><img src="<?php echo esc_url($portfolio_options['upload_image_one']); ?>" style="display:none !important;"></a> -->
+               <a href="<?php echo esc_url($portfolio_options['portfolio_image_qa_link']); ?>" <?php if( $portfolio_options['portfolio_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-link"></i></a>
+             </span>
+           </div>
+           <div class="row" style="min-height: 250px;margin:0;padding:20px;">
+             <div class="col-md-6 col-sm-6">
+               <img src="<?php echo esc_url($home_service_setting['service_image']); ?>" style="height:auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+             </div>
+             <div class="col-md-6 col-sm-6">
+               <p>
+                 代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版
+                 代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="col-md-6 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="2000">
+       <div class="home-gallery">
+         <div class="section-title">
+           <h1>Question and Answer</h1>
+         </div>
+         <div class="room-col">
+           <div class="overly">
+             <span>
+               <!-- <a class="photobox_a gallery-icons" href="<?php echo esc_url($portfolio_options['upload_image_one']); ?>"><i class="fa fa-plus-circle"></i><img src="<?php echo esc_url($portfolio_options['upload_image_one']); ?>" style="display:none !important;"></a> -->
+               <a href="<?php echo esc_url($portfolio_options['portfolio_image_qa_link']); ?>" <?php if( $portfolio_options['portfolio_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-link"></i></a>
+             </span>
+           </div>
+           <ul style="min-height: 250px;margin:0;padding:20px;line-height:3.5">
+             <li>Question 1 ?</li>
+             <li>Question 2 ?</li>
+             <li>Question 3 ?</li>
+             <li>Question 4 ?</li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</section>
+
+<!--star of 問い合わせ  -->
+<section class="services-section" style="background: rgb(0,0,0,0.3);" data-aos="fade-up"  data-aos-duration="500">
+ <div class="container">
+   <div class="row">
+     <div class="col-md-12 col-sm-12 service-box" data-aos="zoom-in" data-aos-duration="1000">
+       <div class="home-gallery">
+         <div class="section-title">
+           <h1>問い合わせ</h1>
+         </div>
+         <div class="row" style="padding: 20px;">
+           <div class="col-md-12 col-sm-12 service-box">
+             <?php echo do_shortcode( '[contact-form-7 id="1234" title="Contact form 1"]' ); ?>
+           </div>
+           <!-- <div class="col-md-6 col-sm-12 service-box">
+             <button type="button" name="button">WEChat</button>
+           </div> -->
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</section>
+<!-- end of 問い合わせ  -->
+
+<!-- <section class="services-section" data-aos="fade-up"  data-aos-duration="500">
+ <div class="container"> -->
   <!-- <div class="row">
 	<div class="col-md-12">
 		<div class="section-title">
@@ -72,8 +202,8 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
 	  </div>
 	</div> -->
    <div class="clearfix"></div>
-    <div class="row">
-	     <div class="col-md-4 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="1000">
+    <!-- <div class="row"> -->
+	     <!-- <div class="col-md-4 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="1000">
 		      <div class="service-icon">
 			    <?php if($home_service_setting['service_one_icon'] !='') { ?>
 				<a href=""><i class="fa <?php echo $home_service_setting['service_one_icon']; ?>"></i></a>
@@ -95,9 +225,9 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
 			  </div>
 			  <?php } ?>
 			</div>
-		 </div>
+		 </div> -->
 
-		  <div class="col-md-4 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="2000">
+		  <!-- <div class="col-md-4 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="2000">
 		      <div class="service-icon">
 			    <?php if($home_service_setting['service_two_icon'] !='') { ?>
 				<a href=""><i class="fa <?php echo $home_service_setting['service_two_icon']; ?>"></i></a>
@@ -119,9 +249,9 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
 			  </div>
 			  <?php } ?>
 			</div>
-		 </div>
+		 </div> -->
 
-		  <div class="col-md-4 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="2000">
+		  <!-- <div class="col-md-4 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="2000">
 		      <div class="service-icon">
 			    <?php if($home_service_setting['service_three_icon'] !='') { ?>
 				<a href=""><i class="fa <?php echo $home_service_setting['service_three_icon']; ?>"></i></a>
@@ -143,11 +273,11 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
 			  </div>
 			  <?php } ?>
 			</div>
-		 </div>
+		 </div> -->
 
-     </div>
-   </div>
-  </section>
+     <!-- </div> -->
+   <!-- </div>
+  </section> -->
 <div class="clearfix"></div>
  <!---------section-collout--------------------->
  <?php } ?>

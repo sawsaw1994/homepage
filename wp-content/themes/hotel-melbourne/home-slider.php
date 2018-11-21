@@ -28,7 +28,7 @@ $slideshowSpeed=$slider_setting['slideshowSpeed'];
 			nextText: "Next",
 			controlNav: true,
 
-			slideshowSpeed: "<?php echo $slideshowSpeed - 1000; ?>",
+			slideshowSpeed: "<?php echo $slideshowSpeed - 1500; ?>",
 			pauseOnHover: true,
 			slideshow: true,
 			start: function(slider){
@@ -60,9 +60,11 @@ $slideshowSpeed=$slider_setting['slideshowSpeed'];
 		}
 </script>
 <!--Flex Slider-->
-	<div class="flexslider" style="position: absolute;">
+	<div class="flexslider" style="position: inherit;top:0;">
+		<!-- <marquee direction="right" loop=0 style="position: absolute;top: 52%;">左から右へ</marquee> -->
+		<!-- <marquee id="myMarquee" scrollamount="30" loop="1">Hi There!</marquee> -->
         <div class="flex-viewport">
-			<ul class="slides">
+			<ul class="slides"  style="display: none;">
 				<li>
 				<?php if($slider_setting['slider_image_one'] !='') { ?>
 				<img src="<?php echo esc_url($slider_setting['slider_image_one']); ?>" width="3264" height="2448" sizes="100vw"  class="img-responsive" alt="<?php echo esc_attr($slider_setting['slider_image_title_one']); ?>">

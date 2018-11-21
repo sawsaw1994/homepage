@@ -55,17 +55,21 @@ function hotel_melbourne_theme_default_data()
   'service_three_image' => get_template_directory_uri().'/images/programmer/pro3.png',
   'service_three_link' => get_site_url().'/programmer3',
   'service_three_new_tab' => 0,
+  'service_image' => get_template_directory_uri().'/images/slide/image.png',
 
 	//Project Portfolio Section
 	'enable_home_portfolio' => 1,
 	'portfolio_title_one' => get_theme_mod('portfolio_title_one',__('会社概要','hotel-melbourne')),
 	'portfolio_title_desc_one' => get_theme_mod('portfolio_title_desc_one',__('Lorem Ipsum is simply dummy text of the printing and typesetting industry.','hotel-melbourne')),
 
-	'upload_image_one' => get_template_directory_uri().'/images/gallery/1.jpg',
-	'portfolio_image_one_title' => get_theme_mod('portfolio_image_one_title',__('会社概要','hotel-melbourne')),
-	'portfolio_price_one' => get_theme_mod('portfolio_price_one',__('1最も重要な経営資源は“人”であり、お客様との“信頼関係”、すなわち“人と人とのつながり”であると確信しております。
-現在、弊社は、ソフトウェア開発からインフラ設計構築、システム運用支援までトータルなソリューションを提供する“ITソリューション”の拡充に加え、IT業界の人材不足の課題対応策として“人材育成”の強化に取り組んでおります。','hotel-melbourne')),
-	'portfolio_time_section_one' => get_theme_mod('portfolio_time_section_one',__('Day / Night','hotel-melbourne')),
+	'upload_image_one' => get_template_directory_uri().'/images/gallery/coe.png',
+	'portfolio_image_one_title' => get_theme_mod('portfolio_image_one_title',__('CEOメッセージ','hotel-melbourne')),
+	'portfolio_price_one' => get_theme_mod('portfolio_price_one',__('最も重要な経営資源は“人”であり、お客様との“信頼関係”、すなわち“人と人とのつながり”であると確信しております。
+
+現在は、会社の基盤作りや、人材育成(Oracle/AIX/Linux/VMware構築勉強会など)に全力を挙げています。
+
+人員は正社員やビジネスパートーナー様の社員などを含めて現在約100名以上稼働しており、８割程が女性です。','hotel-melbourne')),
+	'portfolio_time_section_one' => get_theme_mod('portfolio_time_section_one',__('','hotel-melbourne')),
 	'portfolio_button_text_one' => get_theme_mod('portfolio_button_text_one',__('Remore','hotel-melbourne')),
 	'portfolio_image_one_link' => '#',
 	'portfolio_new_tab' => 1,

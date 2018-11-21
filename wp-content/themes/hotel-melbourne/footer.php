@@ -5,7 +5,7 @@
  */
 
  hotel_melbourne_wp_footer ();
- 
+
  wp_footer(); ?>
 </body>
 </html>
