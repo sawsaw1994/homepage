@@ -24,16 +24,20 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 					<div class="room-col">
 						<div class="overly">
 							<span>
-								<a class="photobox_a gallery-icons" href="<?php echo esc_url($portfolio_options['upload_image_one']); ?>"><i class="fa fa-plus-circle"></i><img src="<?php echo esc_url($portfolio_options['upload_image_one']); ?>" style="display:none !important;"></a>
-								<a href="<?php echo esc_url($portfolio_options['portfolio_image_one_link']); ?>" <?php if( $portfolio_options['portfolio_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-link"></i></a>
+								<!-- <a class="photobox_a gallery-icons" href="<?php echo esc_url($portfolio_options['upload_image_one']); ?>"><i class="fa fa-plus-circle"></i><img src="<?php echo esc_url($portfolio_options['upload_image_one']); ?>" style="display:none !important;"></a> -->
+								<a href="<?php echo esc_url($portfolio_options['upload_coe_link']); ?>" <?php if( $portfolio_options['portfolio_new_tab'] ==0 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-link"></i></a>
 							</span>
 						</div>
 						<img src="<?php echo esc_url($portfolio_options['upload_image_one']); ?>" style="height: 300px;object-fit: cover;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
 					</div>
 					<div class="home-gallery-inner">
-						<h2><?php echo $portfolio_options['portfolio_image_one_title']; ?></h2>
-						 <p style="padding: 0 10px;"><?php echo $portfolio_options['portfolio_price_one']; ?><span><?php echo $portfolio_options['portfolio_time_section_one']; ?></span></p>
-						 <a class="main-btn" href="<?php echo esc_url($portfolio_options['portfolio_image_one_link']); ?>"<?php if( $portfolio_options['portfolio_new_tab'] ==1 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_one']; ?></a>
+						<h2 class="padding-10"><?php echo $portfolio_options['portfolio_image_one_title']; ?></h2>
+						<div class="max-height-100">
+							<div style="padding: 0 10px;">
+								<?php echo $portfolio_options['portfolio_price_one']; ?><span><?php echo $portfolio_options['portfolio_time_section_one']; ?></span>
+							</div>
+						</div>
+						 <a class="main-btn margin-top-10" href="<?php echo esc_url($portfolio_options['upload_coe_link']); ?>"<?php if( $portfolio_options['portfolio_new_tab'] ==0 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_one']; ?><i class="fa fa-arrow-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -44,15 +48,26 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 					<div class="room-col">
 						<div class="overly">
 							<span>
-								<a class="photobox_a gallery-icons" href="<?php echo esc_url($portfolio_options['upload_image_two']); ?>"><i class="fa fa-plus-circle"></i><img src="<?php echo esc_url($portfolio_options['upload_image_two']); ?>" style="display:none !important;"></a>
-								<a href="<?php echo esc_url($portfolio_options['portfolio_image_two_link']); ?>" <?php if( $portfolio_options['portfolio_two_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-link"></i></a>
+								<!-- <a class="photobox_a gallery-icons" href="<?php echo esc_url($portfolio_options['upload_image_two']); ?>"><i class="fa fa-plus-circle"></i><img src="<?php echo esc_url($portfolio_options['upload_image_two']); ?>" style="display:none !important;"></a> -->
+								<a href="<?php echo esc_url($portfolio_options['upload_company_link']); ?>" <?php if( $portfolio_options['portfolio_two_new_tab'] ==0 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-link"></i></a>
 							</span>
 						</div>
-						<!-- <img src="<?php echo esc_url($portfolio_options['upload_image_two']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_two_title']; ?>"> -->
+						<img src="<?php echo esc_url($portfolio_options['upload_company_image']); ?>" style="height: 300px;object-fit: inherit;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
 					</div>
 					<div class="home-gallery-inner">
-						<h3><?php echo $portfolio_options['portfolio_image_two_title']; ?></h3>
-						<table>
+						<h2 class="padding-10"><?php echo $portfolio_options['portfolio_image_two_title']; ?></h2>
+						<div class="max-height-100">
+							<div style="padding: 0 10px;text-align: left;">
+								<dl>
+								  <dt>商号</dt>
+								  <dd>STAR SE 株式会社</dd>
+								  <dt>所在地</dt>
+								  <dd>〒103-0011 東京都中央区日本橋大伝馬町17-6 日本橋小谷商事ビル2階</dd>
+								</dl>
+							</div>
+						</div>
+						<a class="main-btn margin-top-10" href="<?php echo esc_url($portfolio_options['upload_company_link']); ?>"<?php if( $portfolio_options['portfolio_two_new_tab'] ==0 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_two']; ?><i class="fa fa-arrow-right"></i></a>
+						<!-- <table>
 							<tbody>
 								<tr>
 									<td>商号</td>
@@ -72,14 +87,14 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 									<td>代表取締役 金本　香蘭</td>
 								</tr>
 							</tbody>
-						</table>
+						</table> -->
 						 <!-- <p><?php echo $portfolio_options['portfolio_price_two']; ?><span><?php echo $portfolio_options['portfolio_time_section_two']; ?></span></p> -->
-						 <a class="main-btn" style="margin-top: 10px;" href="<?php echo esc_url($portfolio_options['portfolio_image_two_link']); ?>"<?php if( $portfolio_options['portfolio_two_new_tab'] ==1 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_two']; ?></a>
+
 					</div>
-					<div class="">
+					<!-- <div class="">
 
 						<?php echo do_shortcode('[gmap-embed id="86"]'); ?>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<?php } ?>

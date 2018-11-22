@@ -56,6 +56,9 @@ function hotel_melbourne_theme_default_data()
   'service_three_link' => get_site_url().'/programmer3',
   'service_three_new_tab' => 0,
   'service_image' => get_template_directory_uri().'/images/slide/image.png',
+  'service_qa_image' => get_template_directory_uri().'/images/slide/qa.png',
+  'service_mail_image' => get_template_directory_uri().'/images/mail.png',
+  'service_wechat_image' => get_template_directory_uri().'/images/wechat.png',
 
 	//Project Portfolio Section
 	'enable_home_portfolio' => 1,
@@ -63,6 +66,9 @@ function hotel_melbourne_theme_default_data()
 	'portfolio_title_desc_one' => get_theme_mod('portfolio_title_desc_one',__('Lorem Ipsum is simply dummy text of the printing and typesetting industry.','hotel-melbourne')),
 
 	'upload_image_one' => get_template_directory_uri().'/images/gallery/coe.png',
+  'upload_coe_link' => get_site_url().'/coe',
+  'upload_company_image' => get_template_directory_uri().'/images/gallery/company.png',
+  'upload_company_link' => get_site_url().'/会社概要',
 	'portfolio_image_one_title' => get_theme_mod('portfolio_image_one_title',__('CEOメッセージ','hotel-melbourne')),
 	'portfolio_price_one' => get_theme_mod('portfolio_price_one',__('最も重要な経営資源は“人”であり、お客様との“信頼関係”、すなわち“人と人とのつながり”であると確信しております。
 

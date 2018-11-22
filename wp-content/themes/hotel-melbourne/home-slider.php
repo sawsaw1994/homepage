@@ -44,6 +44,11 @@ $slideshowSpeed=$slider_setting['slideshowSpeed'];
 
 
 		});
+
+		$(function () {
+				this.changeBackgroundImage();
+		});
+
 		setInterval(function(){
 			this.changeBackgroundImage();
 	  }, 1000);
@@ -61,6 +66,24 @@ $slideshowSpeed=$slider_setting['slideshowSpeed'];
 </script>
 <!--Flex Slider-->
 	<div class="flexslider" style="position: inherit;top:0;">
+		<marquee behavior="scroll" scrollamount="3" direction="right"
+    onmouseover="this.stop();" onmouseout="this.start();">
+       <ul id="ticker">
+          <span>this is first title this is first titlthis is first titlethis is first title</span>
+          <span>this is second titlethis is first titlethis is first titlethis is first titlethis is first title</span>
+          this is third title
+          this is fourth title
+          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<?php
+						for($i=0;$i<=100;$i++) {
+							echo "&nbsp;";
+						}
+					?>
+					this is fifth title
+      </ul>
+
+		</marquee>
 		<!-- <marquee direction="right" loop=0 style="position: absolute;top: 52%;">左から右へ</marquee> -->
 		<!-- <marquee id="myMarquee" scrollamount="30" loop="1">Hi There!</marquee> -->
         <div class="flex-viewport">
