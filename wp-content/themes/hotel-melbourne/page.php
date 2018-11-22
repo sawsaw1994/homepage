@@ -58,7 +58,7 @@ for (i = 0; i < coll.length; i++) {
 				</article> -->
 				<?php comments_template( '', true );?>
 		</div>
-		<?php get_sidebar(); ?>
+		<!-- <?php get_sidebar(); ?> -->
 	</div>
   </div>
 </section>
