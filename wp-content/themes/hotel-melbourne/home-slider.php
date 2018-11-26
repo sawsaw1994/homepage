@@ -46,7 +46,14 @@ $slideshowSpeed=$slider_setting['slideshowSpeed'];
 		});
 
 		$(function () {
-				this.changeBackgroundImage();
+			$("ul.slides li").each(function(){
+				var srcPath = $('.flex-active-slide').find('img').attr('src');
+				if($(this).hasClass('flex-active-slide')) {
+					$('.wrapper').css({
+						 "background": `url(${srcPath}) no-repeat fixed 0 0 / cover rgba(0, 0, 0, 0)`
+					 });
+				}
+			});
 		});
 
 		setInterval(function(){
@@ -68,11 +75,11 @@ $slideshowSpeed=$slider_setting['slideshowSpeed'];
 	<div class="flexslider" style="position: inherit;top:0;">
 		<marquee behavior="scroll" scrollamount="3" direction="right"
     onmouseover="this.stop();" onmouseout="this.start();">
-       <ul id="ticker">
+       <ul class="ticker">
           <span>this is first title this is first titlthis is first titlethis is first title</span>
           <span>this is second titlethis is first titlethis is first titlethis is first titlethis is first title</span>
-          this is third title
-          this is fourth title
+          <span>this is third title</span>
+          <span>this is fourth title</span>
           &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<?php
@@ -80,7 +87,7 @@ $slideshowSpeed=$slider_setting['slideshowSpeed'];
 							echo "&nbsp;";
 						}
 					?>
-					this is fifth title
+					<span>this is fifth title</span>
       </ul>
 
 		</marquee>

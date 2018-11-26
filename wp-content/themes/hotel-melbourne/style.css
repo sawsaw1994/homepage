@@ -4,7 +4,7 @@ Theme URI: https://asiathemes.com/hotel-details/
 Author: asiathemes
 Author URI:https://asiathemes.com/
 Created by: Asiathemes
-Description: Hotel-Melbourne is a responsive and fully customizable template for Luxury Hotel and resorts theme.The Theme has You can use it for your resorts, hotel or any type of site.Custom menus to choose the menu in Primary Location that is in Header area of the site. which is ideal for creating a hotel / resorts website.Hotel-Melbourne is Retina ready. We focused on usability across various devices, starting with smartphones. Hotel-Melbourne is a Cross-Browser Compatible theme that works on All leading web browsers.In header area and footer of the theme offers Social Media Links to add your Social Links here. we have provide header image setting on front page or index page in our theme you can change this image from theme customizer settings. translation ready and many more. We have provide dynamically hotel room booking facility in our pro theme, no needs to add any types of booking room plugin in your site client easily setup/customize room booking schedule for customers using our giving functionality. we have include user dashboard who is the booking room so user can see his booking on user dashboard after login. Everything of booking detail and user detail show in admin dashboard so admin can manage everything booking and user process. We have include all types of post formate in our theme like Audio post format, Video post format, Image gallery post format, Standard post format, Simple post format etc, you can create your own this types of multiple post format in your site. We have provide a awesome Home page template with multiple beautiful sections inside the Home page template like Awesome slider, Home portfolio/Room section, Home blog section etc. You make this template your front-page easily, creating your front page then please follow this instruction 1. Go on your creating page section --> create a new page --> go the down of publish button and see there Template drop down --> select Home Template from there and publish your page. 2. Go on Settings menu open it --> see inside the settings menu Reading menu tab and click on that --> see inside the reading page Front page displays and select A static page (select below) option and choose your Home template from drop-down menu. you can check our pro theme demo here:- http://asiathemes.asia/?item=hotel , our theme detail page:- https://asiathemes.com/hotel-details/ 
+Description: Hotel-Melbourne is a responsive and fully customizable template for Luxury Hotel and resorts theme.The Theme has You can use it for your resorts, hotel or any type of site.Custom menus to choose the menu in Primary Location that is in Header area of the site. which is ideal for creating a hotel / resorts website.Hotel-Melbourne is Retina ready. We focused on usability across various devices, starting with smartphones. Hotel-Melbourne is a Cross-Browser Compatible theme that works on All leading web browsers.In header area and footer of the theme offers Social Media Links to add your Social Links here. we have provide header image setting on front page or index page in our theme you can change this image from theme customizer settings. translation ready and many more. We have provide dynamically hotel room booking facility in our pro theme, no needs to add any types of booking room plugin in your site client easily setup/customize room booking schedule for customers using our giving functionality. we have include user dashboard who is the booking room so user can see his booking on user dashboard after login. Everything of booking detail and user detail show in admin dashboard so admin can manage everything booking and user process. We have include all types of post formate in our theme like Audio post format, Video post format, Image gallery post format, Standard post format, Simple post format etc, you can create your own this types of multiple post format in your site. We have provide a awesome Home page template with multiple beautiful sections inside the Home page template like Awesome slider, Home portfolio/Room section, Home blog section etc. You make this template your front-page easily, creating your front page then please follow this instruction 1. Go on your creating page section --> create a new page --> go the down of publish button and see there Template drop down --> select Home Template from there and publish your page. 2. Go on Settings menu open it --> see inside the settings menu Reading menu tab and click on that --> see inside the reading page Front page displays and select A static page (select below) option and choose your Home template from drop-down menu. you can check our pro theme demo here:- http://asiathemes.asia/?item=hotel , our theme detail page:- https://asiathemes.com/hotel-details/
 Version:  3.6
 Tags: black, white,green, custom-menu, right-sidebar,featured-image-header, sticky-post, theme-options, threaded-comments, featured-images, flexible-header, responsive-layout
 License: GNU General Public License v3 or later
@@ -175,8 +175,8 @@ ul {
 .navbar .navbar-nav > li > a {
     line-height: 20px;
     padding: 11px 16px;
-	border-radius: 2px 2px 2px 2px; 
-	font-family:'Exo2Medium'; 
+	border-radius: 2px 2px 2px 2px;
+	font-family:'Exo2Medium';
 	text-transform: uppercase;
 	font-size: 15px;
 }
@@ -190,7 +190,7 @@ ul {
     font-size: 15px;
     line-height: 20px;
     padding: 15px 20px;
-    transition: all 0.3s ease-in-out 0s; 
+    transition: all 0.3s ease-in-out 0s;
 }
 .dropdown-menu > li > a:last-chlid {border-bottom: 0px;}
 .dropdown-submenu{position:relative;}
@@ -238,7 +238,7 @@ td.active{line-height:5px;}
 .datepicker-switch{ text-align:center;}
 .datepicker-days{width:250px;}
 .table-condensed{width:250px; padding:5px 20px!important;}
-/*--------Home Slider Section---------------------*/ 
+/*--------Home Slider Section---------------------*/
 
 /*------------------Footer-----------------------------------------------------------------*/
 .footer {
@@ -598,7 +598,7 @@ footer .links-social .newsletter .input-group {border-radius: 0;}
     line-height: 25px;
     margin: 0;
     text-align: center;
-	font-family:'ArimoRegular'; 
+	font-family:'ArimoRegular';
     padding: 0 90px;
 	}
 
@@ -1135,7 +1135,7 @@ background: rgba(9, 13, 17,0.7) none repeat scroll 0 0;
     -webkit-transition-duration: .5s;
     -moz-transition-duration: .5s;
     transition-duration: .5s;
-    -webkit-transform: rotate(45deg);  
+    -webkit-transform: rotate(45deg);
 }
 .room-col .overly  > span a:hover {
     background-color: #FF4136;
@@ -1148,7 +1148,7 @@ background: rgba(9, 13, 17,0.7) none repeat scroll 0 0;
 .room-col .overly  > span a:hover i {
     color: #fff;
 }
-.hover-icon{ 
+.hover-icon{
     height:45px;
     width:45px;
     margin: 0px 10px 20px 10px;
@@ -1320,8 +1320,8 @@ img.aligncenter,img.alignleft,img.alignnone,img.alignright,img.attachment-medium
     padding: 0;
     text-align: center;
 }
-.post-content div#calendar_wrap table > thead > tr > th { 
-	padding: 8px 10px; 
+.post-content div#calendar_wrap table > thead > tr > th {
+	padding: 8px 10px;
 	margin: 0px;
 	font-size: 18px;
 	text-align: center;
@@ -1450,7 +1450,7 @@ table {
 	font-size: 14px !important;
 	padding: 7px 10px;
 	display:inline-block;
-    margin-bottom:5px;	
+    margin-bottom:5px;
 	transition: all 0.4s ease 0s;
  }
 .links .cat-item  a:before {
@@ -1599,7 +1599,7 @@ p{color:#a3a3a3;}
     background-color:#FF4136 !important;
     border-color: #ffffff !important;
 }
-.navbar-toggle .icon-bar { background: #fff;}	
+.navbar-toggle .icon-bar { background: #fff;}
 .navbar-toggle:hover,
 .navbar-toggle:focus {background-color: #FF4136;}
 .navbar {
@@ -1617,7 +1617,8 @@ p{color:#a3a3a3;}
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
 }
 .current_page_item{
-    background-color: #FF4136;
+    /* background-color: #FF4136; */
+  background: rgb(255, 136, 0);
 	color: #FFFFFF !important;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
 }
@@ -1642,7 +1643,7 @@ p{color:#a3a3a3;}
 .dropdown-menu > li > a {
     color: #202020;
 	background-color: #FF4136;
-	border-bottom: 1px solid #eeeeee; transition: all 0.3s ease-in-out 0s; 
+	border-bottom: 1px solid #eeeeee; transition: all 0.3s ease-in-out 0s;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
@@ -1965,13 +1966,18 @@ ul.post-content li {border-bottom: 1px dotted #d6d2d2; }
 }
 /*-------Menu top fixed css---------------------------*/
 .navbar.affix {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     width: 100%;
     z-index:10;
 	border-radius:0;
 	 -webkit-transition: all 3s ease-in;
     transition: all 3s ease-in;
+}
+.navbar {
+    position: absolute;
+    bottom: 0;
+    height: fit-content;
 }
 
 /*--------------------Blog slider Css------------------------------------------------------*/
@@ -2122,7 +2128,7 @@ ul.post-content li {border-bottom: 1px dotted #d6d2d2; }
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 1;	
+    z-index: 1;
 	-webkit-transition: all 0.9s ease 0s;
     -moz-transition: all 0.9s ease 0s;
     -ms-transition: all 0.9s ease 0s;
@@ -2177,7 +2183,7 @@ ul.post-content li {border-bottom: 1px dotted #d6d2d2; }
 	font-family: 'Exo2Medium';
 	letter-spacing:2px;
 	margin-top:10px;
-	
+
 }
 .post-meta h2:hover {
 	  color: #ff4136;
@@ -2189,7 +2195,7 @@ ul.post-content li {border-bottom: 1px dotted #d6d2d2; }
 }
 .post-meta .category {
 	position:relative;
-	overflow:hidden;	
+	overflow:hidden;
 }
 .post-meta .category small {
 	text-transform:uppercase;
@@ -2387,7 +2393,7 @@ footer .links-social .link-groups .links ul li a:before {
   width:70px!important;
   height:70px!important;
   border-radius:4px;
-  background-color:#FF4136!important; 
+  background-color:#FF4136!important;
   -webkit-transform: rotate(-45deg);
   position: absolute;
   text-align: center;
@@ -2396,7 +2402,7 @@ footer .links-social .link-groups .links ul li a:before {
   margin-left: -42px;
   opacity: 1;
   -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease; 
+  transition: all 0.7s ease;
 }
 .service-box {
     padding-bottom: 40px;
@@ -2527,4 +2533,26 @@ h1.site-title a:hover {
 p.site-description {
     text-align: center;
     font-size: 18px;
+}
+
+.mail img:hover,.wechat img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.show-bar-code {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.show-bar-code.show {
+  display: block;
+}
+
+dt {
+  color: #ff8800;
+  font-size: 14px;
 }

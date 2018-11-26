@@ -4,7 +4,7 @@ $portfolio_options = wp_parse_args(  get_option( 'melbourne_option', array() ), 
 if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 <div class="tooth-color-gr"></div>
 
-<section class="gallery-section" style="background: rgb(0,0,0,0.2);" data-aos="fade-up"  data-aos-duration="500">
+<section class="gallery-section" style="background: rgb(255,37,82,0.2);" data-aos="fade-up"  data-aos-duration="500">
 <div class="container">
 	   <div class="row">
 	      <div class="col-md-12 section-title">
@@ -31,7 +31,7 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 						<img src="<?php echo esc_url($portfolio_options['upload_image_one']); ?>" style="height: 300px;object-fit: cover;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
 					</div>
 					<div class="home-gallery-inner">
-						<h2 class="padding-10"><?php echo $portfolio_options['portfolio_image_one_title']; ?></h2>
+						<h2 class="padding-10" style="border-bottom: 2px solid #ff8800;"><?php echo $portfolio_options['portfolio_image_one_title']; ?></h2>
 						<div class="max-height-100">
 							<div style="padding: 0 10px;">
 								<?php echo $portfolio_options['portfolio_price_one']; ?><span><?php echo $portfolio_options['portfolio_time_section_one']; ?></span>
@@ -55,7 +55,7 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 						<img src="<?php echo esc_url($portfolio_options['upload_company_image']); ?>" style="height: 300px;object-fit: inherit;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
 					</div>
 					<div class="home-gallery-inner">
-						<h2 class="padding-10"><?php echo $portfolio_options['portfolio_image_two_title']; ?></h2>
+						<h2 class="padding-10" style="border-bottom: 2px solid #ff8800;"><?php echo $portfolio_options['portfolio_image_two_title']; ?></h2>
 						<div class="max-height-100">
 							<div style="padding: 0 10px;text-align: left;">
 								<dl>
