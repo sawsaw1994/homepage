@@ -295,9 +295,11 @@ footer .links-social .newsletter .input-group {border-radius: 0;}
 .copyright {
     float: left;
     padding: 15px 0px;
-    position: relative;
+    /* position: relative; */
     width: 100%;
-	text-align:center;
+  	text-align:center;
+    position: inherit;
+    bottom: 0;
 }
 .copyright a {
   font-size: 14px;
@@ -648,7 +650,10 @@ footer .links-social .newsletter .input-group {border-radius: 0;}
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-.blog-info{ padding:4px 15px;}
+.blog-info{
+  /* padding:4px 15px; */
+  padding: 0;
+}
 .blog-title{padding-bottom: 20px;}
 .blog-title h2 {margin:0;}
 .blog-title h2 > a {
@@ -970,7 +975,7 @@ ul.post-content li i {font-size: 16px;padding-right: 15px;}
 background: url(./images/page-header-bg.jpg) no-repeat fixed 0 0 / cover rgba(0, 0, 0, 0);
    box-shadow: 0 7px 10px -10px #000;
    position: relative;
-   margin-bottom: 80px;
+   /* margin-bottom: 80px; */
    margin-top:-5px;
 }
 .page-title-inner {
@@ -1974,7 +1979,7 @@ ul.post-content li {border-bottom: 1px dotted #d6d2d2; }
 	 -webkit-transition: all 3s ease-in;
     transition: all 3s ease-in;
 }
-.navbar {
+.home .navbar {
     position: absolute;
     bottom: 0;
     height: fit-content;
@@ -2343,7 +2348,8 @@ footer .links-social .link-groups .links ul li a:before {
     border: 5px solid rgba(255, 65, 54,0.9);
 }
 .blog-detail-description{
-    padding: 30px 30px 10px 30px;
+    /* padding: 30px 30px 10px 30px; */
+    padding: 0;
 }
 .blog-caption{
     width:80% !important;
@@ -2555,4 +2561,14 @@ p.site-description {
 dt {
   color: #ff8800;
   font-size: 14px;
+}
+
+.blog-area {
+  box-shadow: none !important;
+}
+.elementor-59 .elementor-element.elementor-element-ca2161d .elementor-toggle .elementor-tab-title {
+  padding: 40px;
+}
+td, th {
+  color: #535151;
 }
