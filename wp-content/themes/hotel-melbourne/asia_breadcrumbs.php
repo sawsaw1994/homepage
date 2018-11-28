@@ -1,13 +1,13 @@
 <?php
 // theme sub header breadcrumb functions
 function hotel_melbourne_curPageURL() {
-	
+
 	esc_url( set_url_scheme( 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ) );
 }
 
 if( !function_exists('hotel_melbourne_breadcrumbs') ):
-	function hotel_melbourne_breadcrumbs() { 
-			
+	function hotel_melbourne_breadcrumbs() {
+
 		global $post;
 		$homeLink = home_url();
 	?>
@@ -16,7 +16,7 @@ if( !function_exists('hotel_melbourne_breadcrumbs') ):
 	 <div class="page-title-inner">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 page-header-title">
+				<!-- <div class="col-md-6 page-header-title">
 						   <?php if (is_home() || is_front_page()) :
 									echo '<div class="col-md-6 page-header-title">
 					<h1 data-aos="fade-left">'.__('Home','hotel-melbourne').'</h1></div>';
@@ -24,11 +24,11 @@ if( !function_exists('hotel_melbourne_breadcrumbs') ):
 									hotel_melbourne_archive_title();
 								endif;
 						   ?>
-						</div>
+						</div> -->
 						<div class=" col-md-6 page-breadcrumbs">
 							<?php
-								echo '<ol class="top-breadcrumb breadcrumbs" data-aos="fade-right">';
-								
+								echo '<ol class="top-breadcrumb breadcrumbs" data-aos="fade-right" style="text-align:left;">';
+
 								 if (is_home() || is_front_page()) :
 								    echo '<li><a href="'.esc_url($homeLink).'">'.__('Home','hotel-melbourne').'</a></li>';
 									echo '<li class="active"><a href="'.esc_url($homeLink).'">'.get_bloginfo( 'name' ).'</a></li>';
@@ -55,16 +55,16 @@ if( !function_exists('hotel_melbourne_breadcrumbs') ):
 
 									// Single Post
 									} elseif ( is_single() && !is_attachment() ) {
-										
+
 										// Custom post type
 										if ( get_post_type() != 'post' ) {
-											$cat = get_the_category(); 
+											$cat = get_the_category();
 											$cat = $cat[0];
 											echo '<li>';
 												echo get_category_parents($cat, TRUE, '');
 											echo '</li>';
 											echo '<li class="active"><a href="' . hotel_melbourne_curPageURL() . '">'. wp_title( '',false ) .'</a></li>';
-										} }  
+										} }
 										elseif ( is_page() && $post->post_parent ) {
 										$parent_id  = $post->post_parent;
 										$breadcrumbs = array();
@@ -75,10 +75,10 @@ if( !function_exists('hotel_melbourne_breadcrumbs') ):
 										}
 										$breadcrumbs = array_reverse($breadcrumbs);
 										foreach ($breadcrumbs as $crumb) echo $crumb;
-										
+
 										echo '<li class="active"><a href="' . hotel_melbourne_curPageURL() . '">'. get_the_title() .'</a></li>';
 
-									
+
 									}
 									elseif( is_search() )
 									{
@@ -88,12 +88,12 @@ if( !function_exists('hotel_melbourne_breadcrumbs') ):
 									{
 										echo '<li class="active"><a href="' . hotel_melbourne_curPageURL() . '">404 Error</a></li>';
 									}
-									else { 
+									else {
 										// Default
 										echo '<li class="active"><a href="' . hotel_melbourne_curPageURL() . '">'. get_the_title() .'</a></li>';
 									}
 								endif;
-								
+
 								echo '</ol>'
 						?>
 						</div>

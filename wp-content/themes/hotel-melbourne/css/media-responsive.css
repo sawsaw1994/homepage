@@ -6,7 +6,7 @@
  }
 .navbar .navbar-right {
     float: left !important;
-} 
+}
 .navbar-brand > img {
     padding-bottom:16px !important;
 }
@@ -19,7 +19,7 @@
  header {
     position:relative !important;
     top:auto !important;
- }	
+ }
 .navbar .navbar-right {
     float: left !important;
 }
@@ -32,9 +32,9 @@
  .entry-video iframe{
   max-width:100% !important;
   height:400px !important;
- } 	
+ }
 
-}	
+}
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 /*header*/
@@ -62,14 +62,14 @@
 .entry-video iframe{
     max-width:100% !important;
     height:340px !important;
-  } 
+  }
   .slide-caption {
     padding:15px !important;
     top:48%  !important;
 }
-.slide-caption h1{font-size:24px;} 
-  
-} 
+.slide-caption h1{font-size:24px;}
+
+}
 
 @media only screen and (min-width: 200px) and (max-width: 480px) {
  /*header*/
@@ -102,7 +102,7 @@
     left:20%  !important;
     width:60%  !important;
 }
-.slide-caption h1{font-size:18px;}  
+.slide-caption h1{font-size:18px;}
 .flex-direction-nav a {
     width:30px !important;;
     height:40px !important;;
@@ -112,7 +112,33 @@
     font-size:24px !important;
     line-height:40px !important;
 }
-  
+.circle {
+  margin-bottom: 10px;
+}
+.circle,.circle:hover div {
+  width: 200px;
+  height: 200px;
+}
+.show-title {
+  font-size: 16px;
+  top: 65px;
+  margin-left: -80px;
+}
+.services-section .show-sm-circle {
+  display: inline-block !important;
+}
+.home-gallery {
+  background: transparent;
+}
+.home .affix-top .site-title {
+  display: block;
+}
+
+.wpcf7 form {
+  max-height: 600px;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
 }
 @media only screen and (min-width: 200px) and (max-width: 991px) {
 .smart-gep{margin-bottom:60px!important;}

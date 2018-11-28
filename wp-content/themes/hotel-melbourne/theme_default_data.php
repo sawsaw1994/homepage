@@ -59,6 +59,7 @@ function hotel_melbourne_theme_default_data()
   'service_qa_image' => get_template_directory_uri().'/images/slide/qa.png',
   'service_mail_image' => get_template_directory_uri().'/images/mail.png',
   'service_wechat_image' => get_template_directory_uri().'/images/wechat.png',
+  'service_wechat_barcode_image' => get_template_directory_uri().'/images/barcode.jpg',
 
 	//Project Portfolio Section
 	'enable_home_portfolio' => 1,
@@ -108,10 +109,10 @@ function hotel_melbourne_theme_default_data()
 	'blog_description' => get_theme_mod('blog_description',__('Lorem Ipsum is simply dummy text of the printing and typesetting industry.','hotel-melbourne')),
 	'post_display_count' => 4,
 
-	'footer_customization_text' => get_theme_mod('footer_customization_text',__('@ 2016 hotel-melbourne Theme','hotel-melbourne')),
-	'footer_customization_develop' => get_theme_mod('footer_customization_develop',__('Developed By','hotel-melbourne')),
-	'develop_by_name' => get_theme_mod('develop_by_name',__('Asia Themes ','hotel-melbourne')),
-	'develop_by_link' => get_theme_mod('develop_by_link',__('http://asiathemes.com/','hotel-melbourne')),
+	'footer_customization_text' => get_theme_mod('footer_customization_text',__('@ 2018 ','hotel-melbourne')),
+	'footer_customization_develop' => get_theme_mod('footer_customization_develop',__(' Developed By','hotel-melbourne')),
+	'develop_by_name' => get_theme_mod('develop_by_name',__('Star SE ','hotel-melbourne')),
+	'develop_by_link' => get_theme_mod('develop_by_link',__('http://star-se.co.jp/','hotel-melbourne')),
 	'header_social_media_enabled' => 1,
 	'social_media_twitter_link' => '#',
 	'social_media_facebook_link' => '#',

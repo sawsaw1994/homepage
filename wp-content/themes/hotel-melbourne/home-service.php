@@ -23,7 +23,7 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
            </div>
          </div>
        </div>
-       <div class="row" style="text-align: center;height: auto;display: inline-flex;">
+       <div class="row show-sm-circle" style="text-align: center;height: auto;display: inline-flex;">
          <div class="circle two"  data-aos="zoom-in" data-aos-duration="1000" style="background: url(<?php echo esc_url($home_service_setting['service_two_image']);  ?>) no-repeat;background-size: 100% 100%;">
            <div class="circle-overlay">
              <img src="<?php echo esc_url($home_service_setting['service_two_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
@@ -127,7 +127,8 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
          <div class="col-md-12 col-sm-12 service-box wechat">
            <img src="<?php echo esc_url($home_service_setting['service_wechat_image']); ?>" id="wechat" style="height:fit-content;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
            <div class="show-bar-code">
-             <img src="<?php echo esc_url($home_service_setting['service_wechat_image']); ?>" id="wechat" style="height:fit-content;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+             <i class="fa fa-close"></i>
+             <img src="<?php echo esc_url($home_service_setting['service_wechat_barcode_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
            </div>
          </div>
        </div>
@@ -141,7 +142,7 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    <p style="font-size: 24px;">問い合わせ</p>
     <?php echo do_shortcode( '[contact-form-7 id="83" title="Contact form 1"]' ); ?>
   </div>
 
@@ -180,11 +181,15 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
      }
  }
  document.addEventListener( 'wpcf7mailsent', function( event ) {
-  alert( "Fire!" );
+  // alert( "Fire!" );
 }, false );
 
 // show bar code image when click wechat icon
 $("#wechat").on("click", function () {
+  $(".show-bar-code").toggleClass("show");
+});
+
+$(".show-bar-code i.fa-close").on("click", function() {
   $(".show-bar-code").toggleClass("show");
 });
 

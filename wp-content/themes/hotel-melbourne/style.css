@@ -981,7 +981,9 @@ background: url(./images/page-header-bg.jpg) no-repeat fixed 0 0 / cover rgba(0,
 .page-title-inner {
 background: rgba(9, 13, 17,0.7) none repeat scroll 0 0;
 }
-.page-title-inner {padding: 40px 0;}
+.page-title-inner {
+  /* padding: 40px 0; */
+}
 .page-header-title h1 {
 	font-family: 'Exo2Medium';
     font-size:36px;
@@ -2541,7 +2543,7 @@ p.site-description {
     font-size: 18px;
 }
 
-.mail img:hover,.wechat img:hover {
+.mail img:hover,.wechat > img:hover {
   cursor: pointer;
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -2551,8 +2553,22 @@ p.site-description {
 .show-bar-code {
   display: none;
   position: absolute;
-  top: 0;
+  top: -138px;
   right: 0;
+}
+.show-bar-code img {
+  height: 400px !important;
+  object-fit: unset !important;
+}
+.show-bar-code i.fa-close {
+    background: #514c4ce0;
+    padding: 15px;
+    position: absolute;
+    border-radius: 50%;
+    color: #fff;
+    right: -15px;
+    top: -20px;
+    cursor: pointer;
 }
 .show-bar-code.show {
   display: block;
@@ -2571,4 +2587,41 @@ dt {
 }
 td, th {
   color: #535151;
+}
+
+.wpcf7-form .row {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted;
+}
+
+.wpcf7-form .row div:first-child {
+  border-left: 2px solid #f80;
+  margin-left: 30px;
+}
+.wpcf7-form .row textarea {
+    margin: 0px;
+    height: 81px;
+    resize: inherit;
+}
+.wpcf7-form .wpcf7-submit {
+    background: #ff8800;
+    border: 0;
+    padding: 5px 25px;
+    border-radius: 2px;
+    color: #fff;
+}
+.wpcf7-form input,.wpcf7-form textarea {
+  width: 100%;
+}
+.modal-content {
+  max-height: 600px;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+.navbar.affix .container {
+  margin: 0 40px;
+}
+.navbar .navbar-right {
+  margin-right: -160px;
 }

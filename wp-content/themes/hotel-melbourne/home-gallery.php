@@ -58,7 +58,7 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 						<h2 class="padding-10" style="border-bottom: 2px solid #ff8800;"><?php echo $portfolio_options['portfolio_image_two_title']; ?></h2>
 						<div class="max-height-100">
 							<div style="padding: 0 10px;text-align: left;">
-								<dl>
+								<dl style="text-align:center;">
 								  <dt>商号</dt>
 								  <dd>STAR SE 株式会社</dd>
 								  <dt>所在地</dt>
