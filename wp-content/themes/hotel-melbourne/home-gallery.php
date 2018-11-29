@@ -28,7 +28,7 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 								<a href="<?php echo esc_url($portfolio_options['upload_coe_link']); ?>" <?php if( $portfolio_options['portfolio_new_tab'] ==0 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-link"></i></a>
 							</span>
 						</div>
-						<img src="<?php echo esc_url($portfolio_options['upload_image_one']); ?>" style="height: 300px;object-fit: cover;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+						<img src="<?php echo esc_url($portfolio_options['upload_image_one']); ?>" style="height: 300px;object-fit: contain;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
 					</div>
 					<div class="home-gallery-inner">
 						<h2 class="padding-10" style="border-bottom: 2px solid #ff8800;"><?php echo $portfolio_options['portfolio_image_one_title']; ?></h2>

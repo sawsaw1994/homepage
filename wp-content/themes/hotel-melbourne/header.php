@@ -32,7 +32,7 @@
 		</div>
 	</div> -->
 </section>
-<section style="top: 0;position: absolute;background: transparent; padding: 30px 20px;">
+<section class="show-company-name">
   <h1>HelloPage</h1>
 </section>
 

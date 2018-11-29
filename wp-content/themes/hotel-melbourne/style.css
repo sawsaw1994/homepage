@@ -2588,6 +2588,12 @@ dt {
 td, th {
   color: #535151;
 }
+.show-company-name {
+    top: 0;
+    position: absolute;
+    background: transparent;
+    padding: 30px 20px;
+}
 
 .wpcf7-form .row {
   margin-bottom: 10px;
@@ -2613,6 +2619,8 @@ td, th {
 }
 .wpcf7-form input,.wpcf7-form textarea {
   width: 100%;
+  border: 1px solid;
+  padding: 5px 10px;
 }
 .modal-content {
   max-height: 600px;
@@ -2624,4 +2632,9 @@ td, th {
 }
 .navbar .navbar-right {
   margin-right: -160px;
+}
+.navbar-toggle {
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  margin-top: 18px !important;
 }

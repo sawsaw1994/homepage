@@ -67,15 +67,15 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
            <h1>体験談</h1>
          </div>
          <div class="row" style="min-height: 250px;margin:0;padding:20px;">
-           <div class="col-md-6 col-sm-6">
+           <div class="col-md-6 col-sm-12">
              <img src="<?php echo esc_url($home_service_setting['service_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
            </div>
-           <div class="col-md-6 col-sm-6">
-             <p class="margin-0">
+           <div class="col-md-6 col-sm-12">
+             <div class="margin-0 margin-sm-top-10">
                代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版
                代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版
-             </p>
-             <a class="main-btn control-form" style="margin-top: 10px;" href="#" target="_blank">Remore <i class="fa fa-arrow-right"></i></a>
+             </div>
+             <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_ex_link']); ?>">Remore <i class="fa fa-arrow-right"></i></a>
            </div>
          </div>
        </div>
@@ -86,17 +86,17 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
            <h1>Q &amp; A</h1>
          </div>
          <div class="row" style="min-height: 250px;margin:0;padding:20px;">
-           <div class="col-md-6 col-sm-6">
+           <div class="col-md-6 col-sm-12">
              <img src="<?php echo esc_url($home_service_setting['service_qa_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
            </div>
-           <div class="col-md-6 col-sm-6">
+           <div class="col-md-6 col-sm-12">
              <ul style="line-height: 2.5;" class="margin-0 padding-0">
                <li>Question 1?</li>
                <li>Question 2?</li>
                <li>Question 3?</li>
                <li>Question 4?</li>
              </ul>
-             <a class="main-btn control-form" style="margin-top: 10px;" href="#" target="_blank">Remore <i class="fa fa-arrow-right"></i></a>
+             <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_qa_link']); ?>" >Remore <i class="fa fa-arrow-right"></i></a>
            </div>
          </div>
        </div>
@@ -107,7 +107,7 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
 
 <!--star of 問い合わせ  -->
 <section class="services-section" style="background: rgb(0,0,0,0.3);" data-aos="fade-up"  data-aos-duration="500">
- <div class="container">
+ <div class="container show-mail-wechat">
    <div class="row">
      <div class="col-md-6 col-sm-12 service-box" data-aos="zoom-in" data-aos-duration="1000">
        <div class="home-gallery">

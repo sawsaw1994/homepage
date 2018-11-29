@@ -49,6 +49,9 @@ function hotel_melbourne_theme_default_data()
   'service_two_link' => get_site_url().'/programmer2',
   'service_two_new_tab' => 0,
 
+  'service_ex_link' => get_site_url().'/ex',
+  'service_qa_link' => get_site_url().'/qa',
+
 	'service_three_icon' => 'fa-cogs',
 	'service_three_title'=>get_theme_mod('service_three_title',__('プログラマー３','hotel-melbourne')),
 	'service_three_description' => get_theme_mod('service_three_description',__('プログラマー３ プログラマー３ プログラマー３プログラマー３プログラマー３プログラマー３ プログラマー３プログラマー３プログラマー３ プログラマー３プログラマー３ プログラマー３ プログラマー３プログラマー３ プログラマー３','hotel-melbourne')),

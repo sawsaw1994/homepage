@@ -1,3 +1,9 @@
+@media only screen and (min-width: 1201px) {
+.blog-section {
+  min-height: 495px;
+}
+}
+
 @media only screen and (min-width: 940px) and (max-width: 1200px) {
  /*header*/
  header {
@@ -13,15 +19,57 @@
 .post-meta {padding: 40px !important;}
 
 }
-
+/* for iPad Pro */
+@media only screen and (min-width: 1024px) and (min-height: 1366px) {
+  .blog-section {
+    min-height: 936px;
+  }
+  .circle {
+    margin-bottom: 10px;
+  }
+  .circle,.circle:hover div {
+    width: 200px;
+    height: 200px;
+  }
+  .show-title {
+    font-size: 16px;
+    top: 65px;
+    margin-left: -80px;
+  }
+  .services-section .show-sm-circle {
+    /* display: inline-block !important; */
+    margin-left: 10px;
+  }
+  .home .header-top-section {
+    margin-bottom: 1250px;
+  }
+  .navbar .navbar-nav > li > a {
+    padding: 11px 12px;
+  }
+  .navbar-header {
+    text-align: center;
+    float: none;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 989px) {
 /*header*/
  header {
     position:relative !important;
     top:auto !important;
  }
+ .navbar.affix .container {
+   margin: 0;
+ }
+ .blog-section {
+   min-height: 582px;
+ }
 .navbar .navbar-right {
     float: left !important;
+    margin-right: -15px;
+}
+.navbar .navbar-nav > li > a {
+  padding: 10px 12px !important;
+  font-size: 10px !important;
 }
 .navbar-brand > img {
     padding-bottom:16px !important;
@@ -33,7 +81,29 @@
   max-width:100% !important;
   height:400px !important;
  }
-
+ .circle {
+   margin-bottom: 10px;
+ }
+ .circle,.circle:hover div {
+   width: 200px;
+   height: 200px;
+ }
+ .show-title {
+   font-size: 16px;
+   top: 65px;
+   margin-left: -80px;
+ }
+ .services-section .show-sm-circle {
+   /* display: inline-block !important; */
+   margin-left: 10px;
+ }
+ .home .header-top-section {
+   margin-bottom: 950px;
+ }
+ .navbar-header {
+   text-align: center;
+   float: none;
+ }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -127,17 +197,43 @@
 .services-section .show-sm-circle {
   display: inline-block !important;
 }
-.home-gallery {
-  background: transparent;
-}
 .home .affix-top .site-title {
   display: block;
 }
-
-.wpcf7 form {
+.navbar.affix-top .container {
+  margin: 0 40px;
+}
+.navbar .navbar-right {
+  margin-right: -19px;
+}
+/* .wpcf7 form {
   max-height: 600px;
   overflow-y: visible;
   overflow-x: hidden;
+} */
+.home .navbar {
+  top: 0;
+}
+.show-company-name {
+  display: none;
+}
+.modal-content {
+  width: 90%;
+  max-height: 98%;
+}
+
+.show-mail-wechat .home-gallery {
+  box-shadow: none;
+  background: transparent;
+}
+.max-height-100 {
+  max-height: none;
+}
+.margin-sm-top-10 {
+  margin-top: 10px;
+}
+.home .affix-top .navbar-right {
+  float: none !important;
 }
 }
 @media only screen and (min-width: 200px) and (max-width: 991px) {
