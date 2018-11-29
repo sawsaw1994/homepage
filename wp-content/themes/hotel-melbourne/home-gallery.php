@@ -8,7 +8,7 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 <div class="container">
 	   <div class="row">
 	      <div class="col-md-12 section-title">
-			    <h1><?php echo $portfolio_options['portfolio_title_one']; ?></h1>
+			    <!-- <h1><?php echo $portfolio_options['portfolio_title_one']; ?></h1> -->
 				<!-- <p><?php echo $portfolio_options['portfolio_title_desc_one']; ?></p> -->
 		  </div>
 	   </div>
