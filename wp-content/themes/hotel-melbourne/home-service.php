@@ -75,7 +75,7 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
                代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版
                代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版
              </div>
-             <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_ex_link']); ?>">Remore <i class="fa fa-arrow-right"></i></a>
+             <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_ex_link']); ?>">Read More <i class="fa fa-arrow-right"></i></a>
            </div>
          </div>
        </div>
@@ -96,7 +96,7 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
                <li>Question 3?</li>
                <li>Question 4?</li>
              </ul>
-             <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_qa_link']); ?>" >Remore <i class="fa fa-arrow-right"></i></a>
+             <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_qa_link']); ?>" >Read More <i class="fa fa-arrow-right"></i></a>
            </div>
          </div>
        </div>

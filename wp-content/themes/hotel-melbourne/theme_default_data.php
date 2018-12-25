@@ -80,7 +80,7 @@ function hotel_melbourne_theme_default_data()
 
 人員は正社員やビジネスパートーナー様の社員などを含めて現在約100名以上稼働しており、８割程が女性です。','hotel-melbourne')),
 	'portfolio_time_section_one' => get_theme_mod('portfolio_time_section_one',__('','hotel-melbourne')),
-	'portfolio_button_text_one' => get_theme_mod('portfolio_button_text_one',__('Remore','hotel-melbourne')),
+	'portfolio_button_text_one' => get_theme_mod('portfolio_button_text_one',__('Read More','hotel-melbourne')),
 	'portfolio_image_one_link' => '#',
 	'portfolio_new_tab' => 1,
 
@@ -88,7 +88,7 @@ function hotel_melbourne_theme_default_data()
 	'portfolio_image_two_title' => get_theme_mod('portfolio_image_two_title',__('会社情報','hotel-melbourne')),
 	'portfolio_price_two' => get_theme_mod('portfolio_price_two',__('500.00$/-','hotel-melbourne')),
 	'portfolio_time_section_two' => get_theme_mod('portfolio_time_section_two',__('Night / Day','hotel-melbourne')),
-	'portfolio_button_text_two' => get_theme_mod('portfolio_button_text_two',__('Remore','hotel-melbourne')),
+	'portfolio_button_text_two' => get_theme_mod('portfolio_button_text_two',__('Read More','hotel-melbourne')),
 	'portfolio_image_two_link' => '#',
 	'portfolio_two_new_tab' => 1,
 
