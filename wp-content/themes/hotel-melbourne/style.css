@@ -2558,7 +2558,7 @@ p.site-description {
 }
 .show-bar-code img {
   height: 400px !important;
-  object-fit: unset !important;
+  /* object-fit: unset !important; */
 }
 .show-bar-code i.fa-close {
     background: #514c4ce0;
