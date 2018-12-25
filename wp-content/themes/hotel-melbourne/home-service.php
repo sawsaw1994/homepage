@@ -109,23 +109,26 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
 <section class="services-section" style="background: rgb(0,0,0,0.3);" data-aos="fade-up"  data-aos-duration="500">
  <div class="container show-mail-wechat">
    <div class="row">
-     <div class="col-md-6 col-sm-12 service-box" data-aos="zoom-in" data-aos-duration="1000">
+     <div class="col-md-8 col-sm-12 service-box" data-aos="zoom-in" data-aos-duration="1000">
        <div class="home-gallery">
          <!-- <div class="section-title">
            <h1>問い合わせ</h1>
          </div> -->
-         <div class="col-md-12 col-sm-12 service-box mail" style="text-align:center">
-           <img src="<?php echo esc_url($home_service_setting['service_mail_image']); ?>" id="myBtn" style="height:fit-content;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+         <div class="col-md-6 col-sm-12 service-box mail" style="text-align:center">
+           <img src="<?php echo esc_url($home_service_setting['service_mail_image']); ?>" id="myBtn" style="height:100%;width:60%;object-fit:unset !important;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+         </div>
+         <div class="col-md-6 col-sm-12" style="text-align:center;">
+           <img src="<?php echo esc_url($home_service_setting['service_wechat_barcode_image']); ?>"  style="width:100%;height: 80%;margin: 0 auto;object-fit:unset !important;" class="img-fluid">
          </div>
        </div>
      </div>
-     <div class="col-md-6 col-sm-12 service-box" data-aos="zoom-in" data-aos-duration="1000">
+     <div class="col-md-4 col-sm-12 service-box" data-aos="zoom-in" data-aos-duration="1000">
        <div class="home-gallery">
          <!-- <div class="section-title">
            <h1>WECHAT</h1>
          </div> -->
          <div class="col-md-12 col-sm-12 service-box wechat">
-           <img src="<?php echo esc_url($home_service_setting['service_wechat_image']); ?>" id="wechat" style="height:fit-content;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+           <img src="<?php echo esc_url($home_service_setting['service_wechat_image']); ?>" id="wechat" style="height:100%;width:60%;object-fit:unset !important;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
            <div class="show-bar-code">
              <i class="fa fa-close"></i>
              <img src="<?php echo esc_url($home_service_setting['service_wechat_barcode_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
