@@ -20,7 +20,7 @@ $slideshowSpeed=$slider_setting['slideshowSpeed'];
 		jQuery(window).load(function(){
 		  jQuery('.flexslider').flexslider({
 			animation: "slide",
-			animationSpeed: 1500,
+			animationSpeed: 1000,
 			direction: "vertical",
 
 			directionNav: true,
@@ -28,7 +28,7 @@ $slideshowSpeed=$slider_setting['slideshowSpeed'];
 			nextText: "Next",
 			controlNav: true,
 
-			slideshowSpeed: "<?php echo $slideshowSpeed - 1500; ?>",
+			slideshowSpeed: "<?php echo $slideshowSpeed - 1100; ?>",
 			pauseOnHover: true,
 			slideshow: true,
 			start: function(slider){
@@ -58,7 +58,7 @@ $slideshowSpeed=$slider_setting['slideshowSpeed'];
 
 		setInterval(function(){
 			this.changeBackgroundImage();
-	  }, 1000);
+	  }, 1);
 
 		function changeBackgroundImage() {
 			$("ul.slides li").each(function(){
