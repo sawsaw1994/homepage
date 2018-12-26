@@ -2638,3 +2638,6 @@ td, th {
   margin-bottom: 0 !important;
   margin-top: 18px !important;
 }
+body {
+  overflow-y: overlay;
+}
