@@ -2641,3 +2641,17 @@ td, th {
 body {
   overflow-y: overlay;
 }
+@media only screen and (max-width:768px){
+  .wpcf7-form .row div{
+    margin-bottom:10px;
+  }
+  .blog-section .elementor-section .col-md-8{
+    float: left;
+  }
+  .blog-section{
+    margin:40px 0 230px 0 !important;
+  }
+.service-box{
+    padding:0 !important;
+  }
+}
