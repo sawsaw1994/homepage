@@ -109,25 +109,18 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
 <section class="services-section" style="background: rgb(0,0,0,0.3);" data-aos="fade-up"  data-aos-duration="500">
  <div class="container show-mail-wechat">
    <div class="row">
-     <div class="col-md-8 col-sm-12 service-box" data-aos="zoom-in" data-aos-duration="1000">
+     <div class="col-md-12 col-sm-12 service-box" data-aos="zoom-in" data-aos-duration="1000">
        <div class="home-gallery">
          <!-- <div class="section-title">
            <h1>問い合わせ</h1>
          </div> -->
-         <div class="col-md-6 col-sm-12 service-box mail" style="text-align:center">
+         <div class="col-md-4 col-sm-12 service-box mail" style="text-align:center">
            <img src="<?php echo esc_url($home_service_setting['service_mail_image']); ?>" id="myBtn" style="height:auto;width:60%;object-fit:unset !important;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
          </div>
-         <div class="col-md-6 col-sm-12 service-box" style="text-align:center;">
+         <div class="col-md-4 col-sm-12 service-box" style="text-align:center;">
            <img src="<?php echo esc_url($home_service_setting['service_wechat_barcode_image']); ?>"  style="width:60%;height: auto;margin: 0 auto;object-fit:unset !important;" class="img-fluid">
          </div>
-       </div>
-     </div>
-     <div class="col-md-4 col-sm-12 service-box" data-aos="zoom-in" data-aos-duration="1000">
-       <div class="home-gallery">
-         <!-- <div class="section-title">
-           <h1>WECHAT</h1>
-         </div> -->
-         <div class="col-md-12 col-sm-12 service-box wechat">
+         <div class="col-md-4 col-sm-12 service-box wechat">
            <img src="<?php echo esc_url($home_service_setting['service_wechat_image']); ?>" id="wechat" style="height:auto;width:60%;object-fit:unset !important;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
            <div class="show-bar-code">
              <i class="fa fa-close"></i>
@@ -139,6 +132,268 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
    </div>
  </div>
 </section>
+
+<!-- English Language  -->
+<section class="services-section service-en" style="background: rgb(255,136,0,0.3);display:none;" data-aos="fade-up"  data-aos-duration="500">
+   <div class="container" style="padding: 30px;text-align: center;">
+     <div class="row" style="text-align: center;display: inline-flex;">
+       <div class="circle one" data-aos="zoom-in" data-aos-duration="1000" style="background: url(<?php echo esc_url($home_service_setting['service_one_image']);  ?>) no-repeat;background-size: 100% 100%;">
+         <div class="circle-overlay">
+           <img src="<?php echo esc_url($home_service_setting['service_one_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+           <div class="service-icon show-title">
+             <span>Sperm provision program</span>
+           </div>
+           <div class="room-col">
+             <div class="overly">
+               <span>
+                 <a href="<?php echo esc_url($home_service_setting['service_one_link']); ?>" <?php if( $portfolio_options['service_one_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-arrow-right"></i></a>
+               </span>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="row show-sm-circle" style="text-align: center;height: auto;display: inline-flex;">
+       <div class="circle two"  data-aos="zoom-in" data-aos-duration="1000" style="background: url(<?php echo esc_url($home_service_setting['service_two_image']);  ?>) no-repeat;background-size: 100% 100%;">
+         <div class="circle-overlay">
+           <img src="<?php echo esc_url($home_service_setting['service_two_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+           <div class="service-icon show-title">
+             <span>Surrogate mother program</span>
+           </div>
+           <div class="room-col">
+             <div class="overly">
+               <span>
+                 <a href="<?php echo esc_url($home_service_setting['service_two_link']); ?>" <?php if( $portfolio_options['service_one_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-arrow-right"></i></a>
+               </span>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="circle three" data-aos="zoom-in" data-aos-duration="1500"  style="background: url(<?php echo esc_url($home_service_setting['service_three_image']);  ?>) no-repeat;background-size: 100% 100%;">
+         <div class="circle-overlay">
+           <img src="<?php echo esc_url($home_service_setting['service_three_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+           <div class="service-icon show-title">
+             <span>Egg provision program</span>
+           </div>
+           <div class="room-col">
+             <div class="overly">
+               <span>
+                 <a href="<?php echo esc_url($home_service_setting['service_two_link']); ?>" <?php if( $portfolio_options['service_one_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-arrow-right"></i></a>
+               </span>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+</section>
+<div class="clearfix"></div>
+<section class="services-section  service-en" style="background: rgb(255,255,255,0.5);display:none;" data-aos="fade-up"  data-aos-duration="500">
+<div class="container">
+ <div class="row">
+   <div class="col-md-6 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="1000">
+     <div class="home-gallery">
+       <div class="section-title">
+         <h1>experience</h1>
+       </div>
+       <div class="row" style="min-height: 250px;margin:0;padding:20px;">
+         <div class="col-md-6 col-sm-12">
+           <img src="<?php echo esc_url($home_service_setting['service_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+         </div>
+         <div class="col-md-6 col-sm-12">
+           <div class="margin-0 margin-sm-top-10">
+             AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+             AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+           </div>
+           <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_ex_link']); ?>">Read More <i class="fa fa-arrow-right"></i></a>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="col-md-6 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="2000">
+     <div class="home-gallery">
+       <div class="section-title">
+         <h1>Q &amp; A</h1>
+       </div>
+       <div class="row" style="min-height: 250px;margin:0;padding:20px;">
+         <div class="col-md-6 col-sm-12">
+           <img src="<?php echo esc_url($home_service_setting['service_qa_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+         </div>
+         <div class="col-md-6 col-sm-12">
+           <ul style="line-height: 2.5;" class="margin-0 padding-0">
+             <li>Question 1?</li>
+             <li>Question 2?</li>
+             <li>Question 3?</li>
+             <li>Question 4?</li>
+           </ul>
+           <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_qa_link']); ?>" >Read More <i class="fa fa-arrow-right"></i></a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</section>
+
+<!--star of 問い合わせ  -->
+<section class="services-section  service-en" style="background: rgb(0,0,0,0.3);display:none;" data-aos="fade-up"  data-aos-duration="500">
+<div class="container show-mail-wechat">
+ <div class="row">
+   <div class="col-md-12 col-sm-12 service-box" data-aos="zoom-in" data-aos-duration="1000">
+     <div class="home-gallery">
+       <!-- <div class="section-title">
+         <h1>問い合わせ</h1>
+       </div> -->
+       <div class="col-md-4 col-sm-12 service-box mail" style="text-align:center">
+         <img src="<?php echo esc_url($home_service_setting['service_mail_image']); ?>" id="myBtn" style="height:auto;width:60%;object-fit:unset !important;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+       </div>
+       <div class="col-md-4 col-sm-12 service-box" style="text-align:center;">
+         <img src="<?php echo esc_url($home_service_setting['service_wechat_barcode_image']); ?>"  style="width:60%;height: auto;margin: 0 auto;object-fit:unset !important;" class="img-fluid">
+       </div>
+       <div class="col-md-4 col-sm-12 service-box wechat">
+         <img src="<?php echo esc_url($home_service_setting['service_wechat_image']); ?>" id="wechat" style="height:auto;width:60%;object-fit:unset !important;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+         <div class="show-bar-code">
+           <i class="fa fa-close"></i>
+           <img src="<?php echo esc_url($home_service_setting['service_wechat_barcode_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</section>
+
+<!-- Chinese Language-->
+<section class="services-section" style="background: rgb(255,136,0,0.3);" data-aos="fade-up"  data-aos-duration="500">
+   <div class="container" style="padding: 30px;text-align: center;">
+     <div class="row" style="text-align: center;display: inline-flex;">
+       <div class="circle one" data-aos="zoom-in" data-aos-duration="1000" style="background: url(<?php echo esc_url($home_service_setting['service_one_image']);  ?>) no-repeat;background-size: 100% 100%;">
+         <div class="circle-overlay">
+           <img src="<?php echo esc_url($home_service_setting['service_one_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+           <div class="service-icon show-title">
+             <span>精子提供プログラム</span>
+           </div>
+           <div class="room-col">
+             <div class="overly">
+               <span>
+                 <a href="<?php echo esc_url($home_service_setting['service_one_link']); ?>" <?php if( $portfolio_options['service_one_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-arrow-right"></i></a>
+               </span>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="row show-sm-circle" style="text-align: center;height: auto;display: inline-flex;">
+       <div class="circle two"  data-aos="zoom-in" data-aos-duration="1000" style="background: url(<?php echo esc_url($home_service_setting['service_two_image']);  ?>) no-repeat;background-size: 100% 100%;">
+         <div class="circle-overlay">
+           <img src="<?php echo esc_url($home_service_setting['service_two_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+           <div class="service-icon show-title">
+             <span>代理母プログラム</span>
+           </div>
+           <div class="room-col">
+             <div class="overly">
+               <span>
+                 <a href="<?php echo esc_url($home_service_setting['service_two_link']); ?>" <?php if( $portfolio_options['service_one_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-arrow-right"></i></a>
+               </span>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="circle three" data-aos="zoom-in" data-aos-duration="1500"  style="background: url(<?php echo esc_url($home_service_setting['service_three_image']);  ?>) no-repeat;background-size: 100% 100%;">
+         <div class="circle-overlay">
+           <img src="<?php echo esc_url($home_service_setting['service_three_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+           <div class="service-icon show-title">
+             <span>卵子提供プログラム</span>
+           </div>
+           <div class="room-col">
+             <div class="overly">
+               <span>
+                 <a href="<?php echo esc_url($home_service_setting['service_two_link']); ?>" <?php if( $portfolio_options['service_one_new_tab'] ==1 ) { echo "target='_blank'"; } ?> class="hover_thumb gallery-icons"><i class="fa fa-arrow-right"></i></a>
+               </span>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+</section>
+<div class="clearfix"></div>
+<section class="services-section" style="background: rgb(255,255,255,0.5);" data-aos="fade-up"  data-aos-duration="500">
+<div class="container">
+ <div class="row">
+   <div class="col-md-6 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="1000">
+     <div class="home-gallery">
+       <div class="section-title">
+         <h1>体験談</h1>
+       </div>
+       <div class="row" style="min-height: 250px;margin:0;padding:20px;">
+         <div class="col-md-6 col-sm-12">
+           <img src="<?php echo esc_url($home_service_setting['service_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+         </div>
+         <div class="col-md-6 col-sm-12">
+           <div class="margin-0 margin-sm-top-10">
+             代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版
+             代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版
+           </div>
+           <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_ex_link']); ?>">Read More <i class="fa fa-arrow-right"></i></a>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="col-md-6 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="2000">
+     <div class="home-gallery">
+       <div class="section-title">
+         <h1>Q &amp; A</h1>
+       </div>
+       <div class="row" style="min-height: 250px;margin:0;padding:20px;">
+         <div class="col-md-6 col-sm-12">
+           <img src="<?php echo esc_url($home_service_setting['service_qa_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+         </div>
+         <div class="col-md-6 col-sm-12">
+           <ul style="line-height: 2.5;" class="margin-0 padding-0">
+             <li>Question 1?</li>
+             <li>Question 2?</li>
+             <li>Question 3?</li>
+             <li>Question 4?</li>
+           </ul>
+           <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_qa_link']); ?>" >Read More <i class="fa fa-arrow-right"></i></a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</section>
+
+<!--star of 問い合わせ  -->
+<section class="services-section" style="background: rgb(0,0,0,0.3);" data-aos="fade-up"  data-aos-duration="500">
+<div class="container show-mail-wechat">
+ <div class="row">
+   <div class="col-md-12 col-sm-12 service-box" data-aos="zoom-in" data-aos-duration="1000">
+     <div class="home-gallery">
+       <!-- <div class="section-title">
+         <h1>問い合わせ</h1>
+       </div> -->
+       <div class="col-md-4 col-sm-12 service-box mail" style="text-align:center">
+         <img src="<?php echo esc_url($home_service_setting['service_mail_image']); ?>" id="myBtn" style="height:auto;width:60%;object-fit:unset !important;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+       </div>
+       <div class="col-md-4 col-sm-12 service-box" style="text-align:center;">
+         <img src="<?php echo esc_url($home_service_setting['service_wechat_barcode_image']); ?>"  style="width:60%;height: auto;margin: 0 auto;object-fit:unset !important;" class="img-fluid">
+       </div>
+       <div class="col-md-4 col-sm-12 service-box wechat">
+         <img src="<?php echo esc_url($home_service_setting['service_wechat_image']); ?>" id="wechat" style="height:auto;width:60%;object-fit:unset !important;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+         <div class="show-bar-code">
+           <i class="fa fa-close"></i>
+           <img src="<?php echo esc_url($home_service_setting['service_wechat_barcode_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</section>
+
+
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
