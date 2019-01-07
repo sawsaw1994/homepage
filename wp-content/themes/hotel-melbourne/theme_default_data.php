@@ -73,22 +73,40 @@ function hotel_melbourne_theme_default_data()
   'upload_coe_link' => get_site_url().'/coe',
   'upload_company_image' => get_template_directory_uri().'/images/gallery/company.png',
   'upload_company_link' => get_site_url().'/会社概要',
-	'portfolio_image_one_title' => get_theme_mod('portfolio_image_one_title',__('CEOメッセージ','hotel-melbourne')),
-	'portfolio_price_one' => get_theme_mod('portfolio_price_one',__('最も重要な経営資源は“人”であり、お客様との“信頼関係”、すなわち“人と人とのつながり”であると確信しております。
+	'portfolio_image_one_title_ja' => get_theme_mod('portfolio_image_one_title_jp',__('CEOメッセージ','hotel-melbourne')),
+  'portfolio_image_one_title_en' => get_theme_mod('portfolio_image_one_title_en',__('CEO Message','hotel-melbourne')),
+  'portfolio_image_one_title_zh' => get_theme_mod('portfolio_image_one_title_zh',__('CEO致辞','hotel-melbourne')),
+	'portfolio_price_one_ja' => get_theme_mod('portfolio_price_one_jp',__('最も重要な経営資源は“人”であり、お客様との“信頼関係”、すなわち“人と人とのつながり”であると確信しております。
 
 現在は、会社の基盤作りや、人材育成(Oracle/AIX/Linux/VMware構築勉強会など)に全力を挙げています。
 
 人員は正社員やビジネスパートーナー様の社員などを含めて現在約100名以上稼働しており、８割程が女性です。','hotel-melbourne')),
+'portfolio_price_one_zh' => get_theme_mod('portfolio_price_one_zh',__('我认为最重要的管理资源是“人”，“与客户建立信任关系”，即“联系人与人”。
+
+目前，我正在尽最大努力建立公司和人力资源开发的基础（例如Oracle / AIX / Linux / VMware建设研究组）。
+
+目前，约有100名员工在运营，包括全职员工和商业伙伴的员工，约80％是女性。','hotel-melbourne')),
+'portfolio_price_one_en' => get_theme_mod('portfolio_price_one_en',__('I believe that the most important management resource is "people", "trusting relationships" with customers, that is, "connecting people and people".
+
+Currently I am doing my utmost to build the foundation of the company and human resource development (such as Oracle / AIX / Linux / VMware construction study group).
+
+Currently, about 100 employees are in operation, including full-time employees and employees of business partners, and about 80% are women.','hotel-melbourne')),
 	'portfolio_time_section_one' => get_theme_mod('portfolio_time_section_one',__('','hotel-melbourne')),
-	'portfolio_button_text_one' => get_theme_mod('portfolio_button_text_one',__('Read More','hotel-melbourne')),
+	'portfolio_button_text_one_ja' => get_theme_mod('portfolio_button_text_one_ja',__('続きを読む','hotel-melbourne')),
+  'portfolio_button_text_one_en' => get_theme_mod('portfolio_button_text_one_en',__('Read More','hotel-melbourne')),
+  'portfolio_button_text_one_zh' => get_theme_mod('portfolio_button_text_one_zh',__('阅读更多','hotel-melbourne')),
 	'portfolio_image_one_link' => '#',
 	'portfolio_new_tab' => 1,
 
 	'upload_image_two' => get_template_directory_uri() .'/images/gallery/2.jpg',
-	'portfolio_image_two_title' => get_theme_mod('portfolio_image_two_title',__('会社情報','hotel-melbourne')),
+	'portfolio_image_two_title_ja' => get_theme_mod('portfolio_image_two_title_ja',__('会社情報','hotel-melbourne')),
+  'portfolio_image_two_title_zh' => get_theme_mod('portfolio_image_two_title_zh',__('公司信息','hotel-melbourne')),
+  'portfolio_image_two_title_en' => get_theme_mod('portfolio_image_two_title_en',__('About us','hotel-melbourne')),
 	'portfolio_price_two' => get_theme_mod('portfolio_price_two',__('500.00$/-','hotel-melbourne')),
 	'portfolio_time_section_two' => get_theme_mod('portfolio_time_section_two',__('Night / Day','hotel-melbourne')),
-	'portfolio_button_text_two' => get_theme_mod('portfolio_button_text_two',__('Read More','hotel-melbourne')),
+	'portfolio_button_text_two_ja' => get_theme_mod('portfolio_button_text_two_ja',__('続きを読む','hotel-melbourne')),
+  'portfolio_button_text_two_en' => get_theme_mod('portfolio_button_text_two_en',__('Read More','hotel-melbourne')),
+  'portfolio_button_text_two_zh' => get_theme_mod('portfolio_button_text_two_zh',__('阅读更多','hotel-melbourne')),
 	'portfolio_image_two_link' => '#',
 	'portfolio_two_new_tab' => 1,
 

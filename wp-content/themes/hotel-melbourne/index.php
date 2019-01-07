@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 <div class="clearfix"></div>
-<?php 
-	//$melbourne_options=hotel_melbourne_theme_default_data(); 
+<?php
+	//$melbourne_options=hotel_melbourne_theme_default_data();
 	//$slider_setting = wp_parse_args(  get_option( 'melbourne_option', array() ), $melbourne_options ); ?>
 
-<?php hotel_melbourne_breadcrumbs(); ?>	
+<?php hotel_melbourne_breadcrumbs(); ?>
 
-	<div class="clearfix"></div>	
+	<div class="clearfix"></div>
 <section class="blog-section">
 	<div class="container ">
 		<div class="row">
@@ -19,9 +19,9 @@ the_post();
 
 endwhile;  ?>
 <div class="blog-pagination pull-left" data-aos="fade-left">
-				<?php echo paginate_links( array( 
+				<?php echo paginate_links( array(
 							'show_all' => true,
-							'prev_text' => '<', 
+							'prev_text' => '<',
 							'next_text' => '>',
 							)); ?>
 				</div>
@@ -34,10 +34,10 @@ endwhile;  ?>
 			<?php get_search_form(); ?>
 			</div>
 				<div class="clearfix"></div>
-				<?php endif; ?>	
+				<?php endif; ?>
 </div>
 <?php get_sidebar(); ?>
-	</section>		
-<div class="cearfix"></div>	
+	</section>
+<div class="cearfix"></div>
 <?php get_footer(); ?>
 </div>
