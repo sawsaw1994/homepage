@@ -66,7 +66,7 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
          <div class="section-title">
            <h1>体験談</h1>
          </div>
-         <div class="row" style="min-height: 250px;margin:0;padding:20px;">
+         <div class="row" style="min-height: 285px;margin:0;padding:20px;">
            <div class="col-md-6 col-sm-12">
              <img src="<?php echo esc_url($home_service_setting['service_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
            </div>
@@ -85,7 +85,7 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
          <div class="section-title">
            <h1>Q &amp; A</h1>
          </div>
-         <div class="row" style="min-height: 250px;margin:0;padding:20px;">
+         <div class="row" style="min-height: 285px;margin:0;padding:20px;">
            <div class="col-md-6 col-sm-12">
              <img src="<?php echo esc_url($home_service_setting['service_qa_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
            </div>
@@ -196,7 +196,7 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
        <div class="section-title">
          <h1>experience</h1>
        </div>
-       <div class="row" style="min-height: 250px;margin:0;padding:20px;">
+       <div class="row" style="min-height: 285px;margin:0;padding:20px;">
          <div class="col-md-6 col-sm-12">
            <img src="<?php echo esc_url($home_service_setting['service_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
          </div>
@@ -215,7 +215,7 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
        <div class="section-title">
          <h1>Q &amp; A</h1>
        </div>
-       <div class="row" style="min-height: 250px;margin:0;padding:20px;">
+       <div class="row" style="min-height: 285px;margin:0;padding:20px;">
          <div class="col-md-6 col-sm-12">
            <img src="<?php echo esc_url($home_service_setting['service_qa_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
          </div>
@@ -345,7 +345,7 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
        <div class="section-title">
          <h1>Q &amp; A</h1>
        </div>
-       <div class="row" style="min-height: 250px;margin:0;padding:20px;">
+       <div class="row" style="min-height: 285px;margin:0;padding:20px;">
          <div class="col-md-6 col-sm-12">
            <img src="<?php echo esc_url($home_service_setting['service_qa_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
          </div>

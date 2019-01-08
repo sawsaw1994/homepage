@@ -1009,8 +1009,10 @@ background: rgba(9, 13, 17,0.7) none repeat scroll 0 0;
 /*-----------Home Gallery--------------------------*/
 .home-gallery{margin: 0 0 5em; padding-bottom: 2em 0.5em!important;}
 .home-gallery-inner{
+  min-height: 250px;
 	text-align:center!important;
-	margin-top:-10px;padding-bottom:30px;
+	margin-top:-10px;
+  /* padding-bottom:30px; */
 }
 /*---------Home Latest News------------------------------------*/
 .home-blog-section{width:100%;padding:30px 0 60px;}
