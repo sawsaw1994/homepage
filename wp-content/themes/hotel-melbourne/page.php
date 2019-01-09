@@ -64,3 +64,31 @@ for (i = 0; i < coll.length; i++) {
 </section>
 <div class="clearfix"></div>
 <?php get_footer(); ?>
+<script>
+var item = $(".navbar-nav li.current-menu-item").children("a").text();
+if(item == "問い合わせ"){changeContentByLanguage(".dropdown-menu li.current-lang", ".lbl_ja", ".lbl_en",".lbl_zh");
+  changeContentByLanguage(".dropdown-menu li.current-lang", ".lbl_ja", ".lbl_en",".lbl_zh");
+}else if(item == "Inquiry"){
+  changeContentByLanguage(".dropdown-menu li.current-lang", ".lbl_ja", ".lbl_en",".lbl_zh");
+}else if(item == "查询"){
+  changeContentByLanguage(".dropdown-menu li.current-lang", ".lbl_ja", ".lbl_en",".lbl_zh");
+}
+
+function changeContentByLanguage(menu, attr_ja, attr_en, attr_zh){
+  var language = $(menu).children("a").children("span").text();
+
+  if(language == "English"){
+    $(attr_ja).hide();
+    $(attr_zh).hide();
+    $(attr_en).show();
+  }else if(language == "中文 (中国)"){
+    $(attr_ja).hide();
+    $(attr_zh).show();
+    $(attr_en).hide();
+  }else{
+    $(attr_ja).show();
+    $(attr_zh).hide();
+    $(attr_en).hide();
+  }
+}
+</script>
