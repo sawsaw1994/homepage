@@ -19,6 +19,7 @@ class Site extends Base_Category {
 	/**
 	 * Get title.
 	 *
+	 * @since 2.3.0
 	 * @access public
 	 *
 	 * @return string
@@ -30,6 +31,7 @@ class Site extends Base_Category {
 	/**
 	 * Get category items.
 	 *
+	 * @since 2.3.0
 	 * @access public
 	 *
 	 * @param array $options
@@ -56,11 +58,29 @@ class Site extends Base_Category {
 				'url' => admin_url( 'nav-menus.php' ),
 				'keywords' => [ 'menu', 'wordpress' ],
 			],
+			'wordpress-themes' => [
+				'title' => __( 'Themes', 'elementor' ),
+				'icon' => 'wordpress',
+				'url' => admin_url( 'themes.php' ),
+				'keywords' => [ 'themes', 'wordpress' ],
+			],
 			'wordpress-customizer' => [
 				'title' => __( 'Customizer', 'elementor' ),
 				'icon' => 'wordpress',
 				'url' => admin_url( 'customize.php' ),
 				'keywords' => [ 'customizer', 'wordpress' ],
+			],
+			'wordpress-plugins' => [
+				'title' => __( 'Plugins', 'elementor' ),
+				'icon' => 'wordpress',
+				'url' => admin_url( 'plugins.php' ),
+				'keywords' => [ 'plugins', 'wordpress' ],
+			],
+			'wordpress-users' => [
+				'title' => __( 'Users', 'elementor' ),
+				'icon' => 'wordpress',
+				'url' => admin_url( 'users.php' ),
+				'keywords' => [ 'users', 'profile', 'wordpress' ],
 			],
 		];
 	}

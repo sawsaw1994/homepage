@@ -120,10 +120,6 @@ class Utils {
 
 		$link = add_query_arg( 'utm_term', $theme_name, $link );
 
-		if ( defined( 'ELEMENTOR_PARTNER_ID' ) ) {
-			$link = add_query_arg( 'partner_id', sanitize_key( ELEMENTOR_PARTNER_ID ), $link );
-		}
-
 		return $link;
 	}
 
@@ -204,7 +200,8 @@ class Utils {
 	 *
 	 * Replace old URLs to new URLs. This method also updates all the Elementor data.
 	 *
-	 * @since  2.1.0
+	 * @since 2.1.0
+	 * @static
 	 * @access public
 	 *
 	 * @param $from
@@ -593,11 +590,39 @@ class Utils {
 		return method_exists( wp_get_theme(), 'get_post_templates' );
 	}
 
+	/**
+	 * @since 2.1.2
+	 * @access public
+	 * @static
+	 */
 	public static function array_inject( $array, $key, $insert ) {
 		$length = array_search( $key, array_keys( $array ), true ) + 1;
 
 		return array_slice( $array, 0, $length, true ) +
 			$insert +
 			array_slice( $array, $length, null, true );
+	}
+
+	/**
+	 * Render html attributes
+	 *
+	 * @access public
+	 * @static
+	 * @param array $attributes
+	 *
+	 * @return string
+	 */
+	public static function render_html_attributes( array $attributes ) {
+		$rendered_attributes = [];
+
+		foreach ( $attributes as $attribute_key => $attribute_values ) {
+			if ( is_array( $attribute_values ) ) {
+				$attribute_values = implode( ' ', $attribute_values );
+			}
+
+			$rendered_attributes[] = sprintf( '%1$s="%2$s"', $attribute_key, esc_attr( $attribute_values ) );
+		}
+
+		return implode( ' ', $rendered_attributes );
 	}
 }

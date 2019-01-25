@@ -66,9 +66,10 @@ for (i = 0; i < coll.length; i++) {
 <?php get_footer(); ?>
 <script>
 var item = $(".navbar-nav li.current-menu-item").children("a").text();
-if(item == "問い合わせ"){changeContentByLanguage(".dropdown-menu li.current-lang", ".lbl_ja", ".lbl_en",".lbl_zh");
+if(item == "問い合わせ"){
+  // changeContentByLanguage(".dropdown-menu li.current-lang", ".lbl_ja", ".lbl_en",".lbl_zh");
   changeContentByLanguage(".dropdown-menu li.current-lang", ".lbl_ja", ".lbl_en",".lbl_zh");
-}else if(item == "Inquiry"){
+}else if(item == "Inqu.."){
   changeContentByLanguage(".dropdown-menu li.current-lang", ".lbl_ja", ".lbl_en",".lbl_zh");
 }else if(item == "查询"){
   changeContentByLanguage(".dropdown-menu li.current-lang", ".lbl_ja", ".lbl_en",".lbl_zh");

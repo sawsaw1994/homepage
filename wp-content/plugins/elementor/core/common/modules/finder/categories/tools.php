@@ -20,6 +20,7 @@ class Tools extends Base_Category {
 	/**
 	 * Get title.
 	 *
+	 * @since 2.3.0
 	 * @access public
 	 *
 	 * @return string
@@ -31,6 +32,7 @@ class Tools extends Base_Category {
 	/**
 	 * Get category items.
 	 *
+	 * @since 2.3.0
 	 * @access public
 	 *
 	 * @param array $options
@@ -45,7 +47,7 @@ class Tools extends Base_Category {
 				'title' => __( 'Tools', 'elementor' ),
 				'icon' => 'tools',
 				'url' => $tools_url,
-				'keywords' => [ 'tools', 'elementor' ],
+				'keywords' => [ 'tools', 'regenerate css', 'safe mode', 'debug bar', 'sync library', 'elementor' ],
 			],
 			'replace-url' => [
 				'title' => __( 'Replace URL', 'elementor' ),
@@ -57,7 +59,7 @@ class Tools extends Base_Category {
 				'title' => __( 'Version Control', 'elementor' ),
 				'icon' => 'time-line',
 				'url' => $tools_url . '#tab-versions',
-				'keywords' => [ 'tools', 'version', 'control', 'beta', 'elementor' ],
+				'keywords' => [ 'tools', 'version', 'control', 'rollback', 'beta', 'elementor' ],
 			],
 			'maintenance-mode' => [
 				'title' => __( 'Maintenance Mode', 'elementor' ),

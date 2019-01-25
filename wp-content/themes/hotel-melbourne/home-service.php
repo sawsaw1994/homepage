@@ -66,7 +66,7 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
          <div class="section-title">
            <h1>体験談</h1>
          </div>
-         <div class="row" style="min-height: 285px;margin:0;padding:20px;">
+         <div class="row" style="min-height: 300px;margin:0;padding:20px;">
            <div class="col-md-6 col-sm-12">
              <img src="<?php echo esc_url($home_service_setting['service_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
            </div>
@@ -75,17 +75,17 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
                代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版
                代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版代金版
              </div>
-             <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_ex_link']); ?>">Read More <i class="fa fa-arrow-right"></i></a>
+             <a class="main-btn control-form mlefttp-jp" href="<?php echo esc_url($home_service_setting['service_ex_link']); ?>">Read More <i class="fa fa-arrow-right"></i></a>
            </div>
          </div>
        </div>
      </div>
      <div class="col-md-6 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="2000">
-       <div class="home-gallery">
+       <div class="home-gallery hg-mrg">
          <div class="section-title">
            <h1>Q &amp; A</h1>
          </div>
-         <div class="row" style="min-height: 285px;margin:0;padding:20px;">
+         <div class="row" style="min-height: 300px;margin:0;padding:20px;">
            <div class="col-md-6 col-sm-12">
              <img src="<?php echo esc_url($home_service_setting['service_qa_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
            </div>
@@ -96,7 +96,7 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
                <li>Question 3?</li>
                <li>Question 4?</li>
              </ul>
-             <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_qa_link']); ?>" >Read More <i class="fa fa-arrow-right"></i></a>
+             <a class="main-btn control-form mrighttp-jp" href="<?php echo esc_url($home_service_setting['service_qa_link']); ?>" >Read More <i class="fa fa-arrow-right"></i></a>
            </div>
          </div>
        </div>
@@ -121,11 +121,11 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
            <img src="<?php echo esc_url($home_service_setting['service_wechat_barcode_image']); ?>"  style="width:60%;height: auto;margin: 0 auto;object-fit:unset !important;" class="img-fluid">
          </div>
          <div class="col-md-4 col-sm-12 service-box wechat">
-           <img src="<?php echo esc_url($home_service_setting['service_wechat_image']); ?>" id="wechat" style="height:auto;width:60%;object-fit:unset !important;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
-           <div class="show-bar-code">
+           <img src="<?php echo esc_url($home_service_setting['service_wechat_image']); ?>" class="wechat" style="height:auto;width:60%;object-fit:unset !important;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+           <!-- <div class="show-bar-code">
              <i class="fa fa-close"></i>
              <img src="<?php echo esc_url($home_service_setting['service_wechat_barcode_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
-           </div>
+           </div> -->
          </div>
        </div>
      </div>
@@ -196,26 +196,26 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
        <div class="section-title">
          <h1>experience</h1>
        </div>
-       <div class="row" style="min-height: 285px;margin:0;padding:20px;">
+       <div class="row" style="min-height: 300px;margin:0;padding:20px;">
          <div class="col-md-6 col-sm-12">
            <img src="<?php echo esc_url($home_service_setting['service_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
          </div>
          <div class="col-md-6 col-sm-12">
            <div class="margin-0 margin-sm-top-10">
-             AAAAAAAAAAAAAAAAAAAAAAAAAAA
-             AAAAAAAAAAAAAAAAAAAAAAAAAAA
+             AAAAAAAAAAAAAAAAAAAAAAAA
+             AAAAAAAAAAAAAAAAAAAAAAAA
            </div>
-           <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_ex_link']); ?>">Read More <i class="fa fa-arrow-right"></i></a>
+           <a class="main-btn control-form mlefttp-en"  href="<?php echo esc_url($home_service_setting['service_ex_link']); ?>">Read More <i class="fa fa-arrow-right"></i></a>
          </div>
        </div>
      </div>
    </div>
    <div class="col-md-6 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="2000">
-     <div class="home-gallery">
+     <div class="home-gallery hg-mrg">
        <div class="section-title">
          <h1>Q &amp; A</h1>
        </div>
-       <div class="row" style="min-height: 285px;margin:0;padding:20px;">
+       <div class="row" style="min-height: 300px;margin:0;padding:20px;">
          <div class="col-md-6 col-sm-12">
            <img src="<?php echo esc_url($home_service_setting['service_qa_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
          </div>
@@ -226,7 +226,7 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
              <li>Question 3?</li>
              <li>Question 4?</li>
            </ul>
-           <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_qa_link']); ?>" >Read More <i class="fa fa-arrow-right"></i></a>
+           <a class="main-btn control-form mrighttp-en" href="<?php echo esc_url($home_service_setting['service_qa_link']); ?>" >Read More <i class="fa fa-arrow-right"></i></a>
          </div>
        </div>
      </div>
@@ -251,11 +251,11 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
          <img src="<?php echo esc_url($home_service_setting['service_wechat_barcode_image']); ?>"  style="width:60%;height: auto;margin: 0 auto;object-fit:unset !important;" class="img-fluid">
        </div>
        <div class="col-md-4 col-sm-12 service-box wechat">
-         <img src="<?php echo esc_url($home_service_setting['service_wechat_image']); ?>" id="wechat" style="height:auto;width:60%;object-fit:unset !important;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
-         <div class="show-bar-code">
+         <img src="<?php echo esc_url($home_service_setting['service_wechat_image']); ?>" class="wechat" style="height:auto;width:60%;object-fit:unset !important;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+         <!-- <div class="show-bar-code">
            <i class="fa fa-close"></i>
            <img src="<?php echo esc_url($home_service_setting['service_wechat_barcode_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
-         </div>
+         </div> -->
        </div>
      </div>
    </div>
@@ -326,26 +326,26 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
        <div class="section-title">
          <h1>经验</h1>
        </div>
-       <div class="row" style="min-height: 250px;margin:0;padding:20px;">
+       <div class="row" style="min-height: 300px;margin:0;padding:20px;">
          <div class="col-md-6 col-sm-12">
            <img src="<?php echo esc_url($home_service_setting['service_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
          </div>
          <div class="col-md-6 col-sm-12">
            <div class="margin-0 margin-sm-top-10">
              价格版本价格版本价格价格版本价格版本价格版本价格版价格价格版本价格版本价格版本价格版价格价格版本价格版本价格版价格版本价格版本价格价格价格价格版本
-              价格版本价格版本价格价格版本价格版本价格版本价格版价格价格版本价格版本价格版本价格版价格价格版本价格版本价格版价格版本价格版本价格价格价格价格版本
+              价格版本价格版本价格价格版本价格版本价格版本价格版价格价格版本价格版本价格版本价格版价格价格版本价格版本价格版价格版本
            </div>
-           <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_ex_link']); ?>">Read More <i class="fa fa-arrow-right"></i></a>
+           <a class="main-btn control-form mlefttp-ch" href="<?php echo esc_url($home_service_setting['service_ex_link']); ?>">Read More <i class="fa fa-arrow-right"></i></a>
          </div>
        </div>
      </div>
    </div>
    <div class="col-md-6 col-sm-6 service-box" data-aos="zoom-in" data-aos-duration="2000">
-     <div class="home-gallery">
+     <div class="home-gallery hg-mrg">
        <div class="section-title">
          <h1>Q &amp; A</h1>
        </div>
-       <div class="row" style="min-height: 285px;margin:0;padding:20px;">
+       <div class="row" style="min-height: 300px;margin:0;padding:20px;">
          <div class="col-md-6 col-sm-12">
            <img src="<?php echo esc_url($home_service_setting['service_qa_image']); ?>" style="height:fit-content;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
          </div>
@@ -356,7 +356,7 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
              <li>Question 3?</li>
              <li>Question 4?</li>
            </ul>
-           <a class="main-btn control-form" style="margin-top: 10px;" href="<?php echo esc_url($home_service_setting['service_qa_link']); ?>" >Read More <i class="fa fa-arrow-right"></i></a>
+           <a class="main-btn control-form mrighttp-ch" href="<?php echo esc_url($home_service_setting['service_qa_link']); ?>" >Read More <i class="fa fa-arrow-right"></i></a>
          </div>
        </div>
      </div>
@@ -381,11 +381,11 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
          <img src="<?php echo esc_url($home_service_setting['service_wechat_barcode_image']); ?>"  style="width:60%;height: auto;margin: 0 auto;object-fit:unset !important;" class="img-fluid">
        </div>
        <div class="col-md-4 col-sm-12 service-box wechat">
-         <img src="<?php echo esc_url($home_service_setting['service_wechat_image']); ?>" id="wechat" style="height:auto;width:60%;object-fit:unset !important;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
-         <div class="show-bar-code">
+         <img src="<?php echo esc_url($home_service_setting['service_wechat_image']); ?>" class="wechat" style="height:auto;width:60%;object-fit:unset !important;margin: 0 auto;" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
+         <!-- <div class="show-bar-code">
            <i class="fa fa-close"></i>
            <img src="<?php echo esc_url($home_service_setting['service_wechat_barcode_image']); ?>" class="img-responsive" title="<?php echo $portfolio_options['portfolio_image_one_title']; ?>">
-         </div>
+         </div> -->
        </div>
      </div>
    </div>
@@ -395,15 +395,29 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
 
 
 <!-- The Modal -->
+
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <span class="close gclose">&times;</span>
     <p style="font-size: 24px;" class="p_ja">問い合わせ</p>
     <p style="font-size: 24px;" class="p_en">Inquiry</p>
     <p style="font-size: 24px;" class="p_zh">查询</p>
     <?php echo do_shortcode( '[contact-form-7 id="83" title="Contact form 1"]' ); ?>
+  </div>
+
+</div>
+
+<div id="wechat_Modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close wclose">&times;</span>
+    <p style="font-size: 24px;" class="p_ja">問い合わせ</p>
+    <p style="font-size: 24px;" class="p_en">Inquiry</p>
+    <p style="font-size: 24px;" class="p_zh">查询</p>
+    <?php echo do_shortcode( '[contact-form-7 id="574" title="Contact form 1"]' ); ?>
   </div>
 
 </div>
@@ -417,12 +431,14 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
  <script>
  // Get the modal
  var modal = document.getElementById('myModal');
+ var wechat_modal = document.getElementById('wechat_Modal');
 
  // Get the button that opens the modal
    //var btn = document.getElementsByClassName("myBtn")[0];
 
  // Get the <span> element that closes the modal
- var span = document.getElementsByClassName("close")[0];
+ var gspan = document.getElementsByClassName("gclose")[0];
+ var wspan = document.getElementsByClassName("wclose")[0];
 
  // When the user clicks the button, open the modal
  $(".myBtn").on("click",function() {
@@ -431,10 +447,68 @@ if($home_service_setting['service_section_enabled'] == 1 ) { ?>
     modal.style.display = "block";
  });
 
+ $(".wechat").on("click",function() {
+    changeContentByLanguage(".dropdown-menu li.current-lang", ".lbl_ja", ".lbl_en",".lbl_zh");
+    changeContentByLanguage(".dropdown-menu li.current-lang", ".p_ja", ".p_en", ".p_zh");
+    wechat_modal.style.display = "block";
+ });
  // When the user clicks on <span> (x), close the modal
- span.onclick = function() {
+ gspan.onclick = function() {
      modal.style.display = "none";
  }
+
+ wspan.onclick = function() {
+     wechat_modal.style.display = "none";
+ }
+
+
+ // ***********start for drag and drop***********
+ //Make the DIV element draggagle:
+
+ dragElement(document.getElementById("myModal"));
+ dragElement(document.getElementById("wechat_Modal"));
+
+ function dragElement(elmnt) {
+   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+   if (document.getElementById(elmnt.id + "header")) {
+     /* if present, the header is where you move the DIV from:*/
+     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+   } else {
+     /* otherwise, move the DIV from anywhere inside the DIV:*/
+     elmnt.onmousedown = dragMouseDown;
+   }
+
+   function dragMouseDown(e) {
+     // e = e || window.event;
+     // e.preventDefault();
+     // get the mouse cursor position at startup:
+     pos3 = e.clientX;
+     pos4 = e.clientY;
+     document.onmouseup = closeDragElement;
+     // call a function whenever the cursor moves:
+     document.onmousemove = elementDrag;
+   }
+
+   function elementDrag(e) {
+     e = e || window.event;
+     e.preventDefault();
+     // calculate the new cursor position:
+     pos1 = pos3 - e.clientX;
+     pos2 = pos4 - e.clientY;
+     pos3 = e.clientX;
+     pos4 = e.clientY;
+     // set the element's new position:
+     elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+     elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+   }
+
+   function closeDragElement() {
+     /* stop moving when mouse button is released:*/
+     document.onmouseup = null;
+     document.onmousemove = null;
+   }
+ }
+ // ***********end for drag and drop***********
 
  // When the user clicks anywhere outside of the modal, close it
  window.onclick = function(event) {
@@ -458,7 +532,12 @@ $(".show-bar-code i.fa-close").on("click", function() {
 $(".drop-down-menu li").on("click",function(){
   changeContentByLanguage($(this), ".service_ja", ".service_en", ".service_zh");
 });
-
+$('.tooltip').tooltipster({
+   animation: 'fade',
+   delay: 200,
+   theme: 'tooltipster-punk',
+   trigger: 'click'
+});
 function changeContentByLanguage(menu, attr_ja, attr_en, attr_zh){
   var language = $(menu).children("a").children("span").text();
 

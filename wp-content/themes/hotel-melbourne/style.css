@@ -169,8 +169,15 @@ ul {
     margin-top: 0px !important;
 }
 .navbar .navbar-nav > li {
-    margin-right: 5px;
+    /* margin-right: 5px; */
+      margin-right: 7px;
     padding: 0 0 0px 0px;
+}
+/* .navbar .navbar-nav > li:first-child {
+  margin-left:15px;
+} */
+.navbar .navbar-nav > li:last-child {
+    margin-right: -23px;
 }
 .navbar .navbar-nav > li > a {
     line-height: 20px;
@@ -180,11 +187,15 @@ ul {
 	text-transform: uppercase;
 	font-size: 15px;
 }
+.navbar .navbar-nav > li:last-child > a {
+  	text-transform: none;
+    min-width: 136px;
+}
 .nav {margin-top: 0px; padding: 14px 0;}
 .navbar {margin-bottom: 0px !important;}
 .navbar-collapse { max-height: 100%;}
 /*Dropdown Menus */
-.dropdown-menu { padding: 0;min-width: 250px;}
+/* .dropdown-menu { padding: 0;min-width: 250px;} */
 .dropdown-menu > li > a {
     font-family:'Exo2Medium';
     font-size: 15px;
@@ -1009,7 +1020,7 @@ background: rgba(9, 13, 17,0.7) none repeat scroll 0 0;
 /*-----------Home Gallery--------------------------*/
 .home-gallery{margin: 0 0 5em; padding-bottom: 2em 0.5em!important;}
 .home-gallery-inner{
-  min-height: 250px;
+  min-height: 300px;
 	text-align:center!important;
 	margin-top:-10px;
   /* padding-bottom:30px; */
@@ -2603,10 +2614,20 @@ td, th {
   border-bottom: 1px dotted;
 }
 
-.wpcf7-form .row div:first-child {
+/* .wpcf7-form .row div:first-child {
+  border-left: 2px solid #f80;
+  margin-left: 30px;
+} */
+
+.wpcf7-form .row div {
   border-left: 2px solid #f80;
   margin-left: 30px;
 }
+
+.wpcf7-form .row div:last-child {
+  border-left: none;
+}
+
 .wpcf7-form .row textarea {
     margin: 0px;
     height: 81px;
@@ -2629,12 +2650,12 @@ td, th {
   overflow-y: visible;
   overflow-x: hidden;
 }
-.navbar.affix .container {
+/* .navbar.affix .container {
   margin: 0 40px;
-}
-.navbar .navbar-right {
+} */
+/* .navbar .navbar-right {
   margin-right: -85px;
-}
+} */
 .navbar-toggle {
   margin-right: 0 !important;
   margin-bottom: 0 !important;
@@ -2651,9 +2672,20 @@ body {
     float: left;
   }
   .blog-section{
-    margin:40px 0 230px 0 !important;
+    margin: 0 0 120px 0 !important;
+    min-height: 0;
+  }
+  .elementor-inner {
+    margin-bottom: 205px;
   }
 .service-box{
     padding:0 !important;
+  }
+  .wpcf7-form .row div:last-child {
+    margin-left: 12px;
+  }
+  .wpcf7-form .row {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 }

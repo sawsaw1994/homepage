@@ -19,6 +19,7 @@ class General extends Base_Category {
 	/**
 	 * Get title.
 	 *
+	 * @since 2.3.0
 	 * @access public
 	 *
 	 * @return string
@@ -30,6 +31,7 @@ class General extends Base_Category {
 	/**
 	 * Get category items.
 	 *
+	 * @since 2.3.0
 	 * @access public
 	 *
 	 * @param array $options
@@ -38,11 +40,11 @@ class General extends Base_Category {
 	 */
 	public function get_category_items( array $options = [] ) {
 		return [
-			'my-templates' => [
-				'title' => _x( 'My Templates', 'Template Library', 'elementor' ),
+			'saved-templates' => [
+				'title' => _x( 'Saved Templates', 'Template Library', 'elementor' ),
 				'icon' => 'library-save',
-				'url' => admin_url( 'edit.php?post_type=' . Source_Local::CPT ),
-				'keywords' => [ 'template', 'header', 'footer', 'single', 'archive', 'search', '404 page' ],
+				'url' => Source_Local::get_admin_url(),
+				'keywords' => [ 'template', 'section', 'page', 'library' ],
 			],
 			'system-info' => [
 				'title' => __( 'System Info', 'elementor' ),

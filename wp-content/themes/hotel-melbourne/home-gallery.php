@@ -37,7 +37,7 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 								<?php echo $portfolio_options['portfolio_price_one_ja']; ?><span><?php echo $portfolio_options['portfolio_time_section_one']; ?></span>
 							</div>
 						</div>
-						 <a class="main-btn margin-top-10" href="<?php echo esc_url($portfolio_options['upload_coe_link']); ?>"<?php if( $portfolio_options['portfolio_new_tab'] ==0 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_one_ja']; ?><i class="fa fa-arrow-right"></i></a>
+						 <a class="main-btn mrg-toplft-jp" href="<?php echo esc_url($portfolio_options['upload_coe_link']); ?>"<?php if( $portfolio_options['portfolio_new_tab'] ==0 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_one_ja']; ?><i class="fa fa-arrow-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -67,7 +67,7 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 								</dl>
 							</div>
 						</div>
-						<a class="main-btn margin-top-10" href="<?php echo esc_url($portfolio_options['upload_company_link']); ?>"<?php if( $portfolio_options['portfolio_two_new_tab'] ==0 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_two_ja']; ?><i class="fa fa-arrow-right"></i></a>
+						<a class="main-btn mrg-toprg-jp" hrefjp<?php echo esc_url($portfolio_options['upload_company_link']); ?>"<?php if( $portfolio_options['portfolio_two_new_tab'] ==0 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_two_ja']; ?><i class="fa fa-arrow-right"></i></a>
 						<!-- <table>
 							<tbody>
 								<tr>
@@ -142,7 +142,7 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 								<?php echo $portfolio_options['portfolio_price_one_en']; ?><span><?php echo $portfolio_options['portfolio_time_section_one']; ?></span>
 							</div>
 						</div>
-						 <a class="main-btn margin-top-10" href="<?php echo esc_url($portfolio_options['upload_coe_link']); ?>"<?php if( $portfolio_options['portfolio_new_tab'] ==0 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_one_en']; ?><i class="fa fa-arrow-right"></i></a>
+						 <a class="main-btn mrg-toplft-eng" href="<?php echo esc_url($portfolio_options['upload_coe_link']); ?>"<?php if( $portfolio_options['portfolio_new_tab'] ==0 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_one_en']; ?><i class="fa fa-arrow-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -171,7 +171,7 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 								</dl>
 							</div>
 						</div>
-						<a class="main-btn margin-top-10" href="<?php echo esc_url($portfolio_options['upload_company_link']); ?>"<?php if( $portfolio_options['portfolio_two_new_tab'] ==0 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_two_en']; ?><i class="fa fa-arrow-right"></i></a>
+						<a class="main-btn mrg-toprg-eng" href="<?php echo esc_url($portfolio_options['upload_company_link']); ?>"<?php if( $portfolio_options['portfolio_two_new_tab'] ==0 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_two_en']; ?><i class="fa fa-arrow-right"></i></a>
 						<!-- <table>
 							<tbody>
 								<tr>
@@ -245,7 +245,7 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 								<?php echo $portfolio_options['portfolio_price_one_zh']; ?><span><?php echo $portfolio_options['portfolio_time_section_one']; ?></span>
 							</div>
 						</div>
-						 <a class="main-btn margin-top-10" href="<?php echo esc_url($portfolio_options['upload_coe_link']); ?>"<?php if( $portfolio_options['portfolio_new_tab'] ==0 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_one_zh']; ?><i class="fa fa-arrow-right"></i></a>
+						 <a class="main-btn mrg-toplft-ch" href="<?php echo esc_url($portfolio_options['upload_coe_link']); ?>"<?php if( $portfolio_options['portfolio_new_tab'] ==0 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_one_zh']; ?><i class="fa fa-arrow-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -274,7 +274,7 @@ if($portfolio_options['enable_home_portfolio'] == 1 ) { ?>
 								</dl>
 							</div>
 						</div>
-						<a class="main-btn margin-top-10" href="<?php echo esc_url($portfolio_options['upload_company_link']); ?>"<?php if( $portfolio_options['portfolio_two_new_tab'] ==0 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_two_zh']; ?><i class="fa fa-arrow-right"></i></a>
+						<a class="main-btn mrg-toprg-ch" href="<?php echo esc_url($portfolio_options['upload_company_link']); ?>"<?php if( $portfolio_options['portfolio_two_new_tab'] ==0 ) { echo "target='_blank'"; } ?>><?php echo $portfolio_options['portfolio_button_text_two_zh']; ?><i class="fa fa-arrow-right"></i></a>
 						<!-- <table>
 							<tbody>
 								<tr>

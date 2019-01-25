@@ -6,6 +6,10 @@ use Elementor\Core\Common\Modules\Ajax\Module as Ajax;
 use Elementor\Core\Common\Modules\Finder\Module as Finder;
 use Elementor\Core\Common\Modules\Connect\Module as Connect;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 /**
  * App
  *
@@ -20,6 +24,7 @@ class App extends BaseApp {
 	/**
 	 * App constructor.
 	 *
+	 * @since 2.3.0
 	 * @access public
 	 */
 	public function __construct() {
@@ -43,6 +48,7 @@ class App extends BaseApp {
 	 *
 	 * Initializing common components.
 	 *
+	 * @since 2.3.0
 	 * @access public
 	 */
 	public function init_components() {
@@ -59,6 +65,7 @@ class App extends BaseApp {
 	 *
 	 * Retrieve the app name.
 	 *
+	 * @since 2.3.0
 	 * @access public
 	 *
 	 * @return string Common app name.
@@ -72,9 +79,18 @@ class App extends BaseApp {
 	 *
 	 * Register common scripts.
 	 *
+	 * @since 2.3.0
 	 * @access public
 	 */
 	public function register_scripts() {
+		wp_register_script(
+			'elementor-common-modules',
+			ELEMENTOR_ASSETS_URL . 'js/common-modules.js',
+			[],
+			ELEMENTOR_VERSION,
+			true
+		);
+
 		wp_register_script(
 			'backbone-marionette',
 			$this->get_js_assets_url( 'backbone.marionette', 'assets/lib/backbone/' ),
@@ -101,7 +117,7 @@ class App extends BaseApp {
 			[
 				'jquery-ui-position',
 			],
-			'4.5.1',
+			'4.7.1',
 			true
 		);
 
@@ -113,6 +129,7 @@ class App extends BaseApp {
 				'jquery-ui-draggable',
 				'backbone-marionette',
 				'backbone-radio',
+				'elementor-common-modules',
 				'elementor-dialog',
 			],
 			ELEMENTOR_VERSION,
@@ -127,6 +144,7 @@ class App extends BaseApp {
 	 *
 	 * Register common styles.
 	 *
+	 * @since 2.3.0
 	 * @access public
 	 */
 	public function register_styles() {
@@ -134,7 +152,7 @@ class App extends BaseApp {
 			'elementor-icons',
 			$this->get_css_assets_url( 'elementor-icons', 'assets/lib/eicons/css/' ),
 			[],
-			'4.0.0'
+			'4.1.0'
 		);
 
 		wp_enqueue_style(
@@ -150,6 +168,7 @@ class App extends BaseApp {
 	/**
 	 * Add template.
 	 *
+	 * @since 2.3.0
 	 * @access public
 	 *
 	 * @param string $template Can be either a link to template file or template
@@ -174,6 +193,7 @@ class App extends BaseApp {
 	 *
 	 * Prints all registered templates.
 	 *
+	 * @since 2.3.0
 	 * @access public
 	 */
 	public function print_templates() {
@@ -187,6 +207,7 @@ class App extends BaseApp {
 	 *
 	 * Define the default/initial settings of the common app.
 	 *
+	 * @since 2.3.0
 	 * @access protected
 	 *
 	 * @return array
@@ -206,6 +227,8 @@ class App extends BaseApp {
 	 * Add default templates.
 	 *
 	 * Register common app default templates.
+	 * @since 2.3.0
+	 * @access private
 	 */
 	private function add_default_templates() {
 		$default_templates = [

@@ -59,6 +59,10 @@ class Manager {
 		$this->add_actions();
 	}
 
+	/**
+	 * @since 2.3.0
+	 * @access public
+	 */
 	public function add_actions() {
 		add_action( 'elementor/ajax/register_actions', [ $this, 'register_ajax_actions' ] );
 		add_action( 'wp_ajax_elementor_library_direct_actions', [ $this, 'handle_direct_actions' ] );
@@ -225,9 +229,7 @@ class Manager {
 
 		return [
 			'templates' => $this->get_templates(),
-			'config' => [
-				'categories' => $library_data['categories'],
-			],
+			'config' => $library_data['types_data'],
 		];
 	}
 
@@ -429,6 +431,10 @@ class Manager {
 		return $source->export_template( $args['template_id'] );
 	}
 
+	/**
+	 * @since 2.3.0
+	 * @access public
+	 */
 	public function direct_import_template() {
 		/** @var Source_Local $source */
 		$source = $this->get_source( 'local' );
@@ -556,8 +562,8 @@ class Manager {
 	 *
 	 * Initialize template library ajax calls for allowed ajax requests.
 	 *
-	 * @since 1.0.0
-	 * @access private
+	 * @since 2.3.0
+	 * @access public
 	 *
 	 * @param Ajax $ajax
 	 */
@@ -579,6 +585,10 @@ class Manager {
 		}
 	}
 
+	/**
+	 * @since 2.3.0
+	 * @access public
+	 */
 	public function handle_direct_actions() {
 		if ( ! User::is_current_user_can_edit_post_type( Source_Local::CPT ) ) {
 			return;
@@ -619,9 +629,13 @@ class Manager {
 	 * @access private
 	 */
 	private function on_direct_import_template_success() {
-		wp_safe_redirect( admin_url( 'edit.php?post_type=' . Source_Local::CPT ) );
+		wp_safe_redirect( admin_url( Source_Local::ADMIN_MENU_SLUG ) );
 	}
 
+	/**
+	 * @since 2.3.0
+	 * @access private
+	 */
 	private function handle_direct_action_error( $message ) {
 		_default_wp_die_handler( $message, 'Elementor Library' );
 	}

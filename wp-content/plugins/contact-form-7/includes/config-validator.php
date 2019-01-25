@@ -532,10 +532,10 @@ class WPCF7_ConfigValidator {
 			'params' => array(),
 		) );
 
-		if ( ! wpcf7_is_mailbox_list( $content ) ) {
-			return $this->add_error( $section,
-				self::error_invalid_mailbox_syntax, $args );
-		}
+		// if ( ! wpcf7_is_mailbox_list( $content ) ) {
+		// 	return $this->add_error( $section,
+		// 		self::error_invalid_mailbox_syntax, $args );
+		// }
 
 		return false;
 	}

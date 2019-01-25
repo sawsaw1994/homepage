@@ -2,6 +2,7 @@
 namespace Elementor\Modules\Library\Documents;
 
 use Elementor\Core\Base\Document;
+use Elementor\TemplateLibrary\Source_Local;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
@@ -36,12 +37,17 @@ abstract class Library_Document extends Document {
 	public static function get_properties() {
 		$properties = parent::get_properties();
 
+		$properties['admin_tab_group'] = 'library';
 		$properties['show_in_library'] = true;
 		$properties['register_type'] = true;
-		$properties['library_view'] = 'grid';
-		$properties['group'] = 'blocks';
 
 		return $properties;
+	}
+
+	public function print_admin_column_type() {
+		$admin_filter_url = admin_url( Source_Local::ADMIN_MENU_SLUG . '&elementor_library_type=' . $this->get_name() );
+
+		printf( '<a href="%s">%s</a>', $admin_filter_url, $this->get_title() );
 	}
 
 	/**
